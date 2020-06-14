@@ -1,1 +1,24 @@
+body {
+	height:100%;
+	width:100%;
+	margin:0;
+	font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
+}
 
+.links {
+	height:12.5vh;
+	background-color:#4b2e83;
+}
+
+.title {
+	height:35%;
+	background-color:#36215e;
+}
+
+#title {
+	color:#b7a57a;
+	font-size:3vw;
+	font-weight:bold;
+	display:inline-block;
+	text-align:center;
+}
