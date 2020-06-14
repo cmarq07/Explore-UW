@@ -2,17 +2,7 @@ body {
 	height:100%;
 	width:100%;
 	margin:0;
-	font-family: "Open Sans", Helvetica, Arial, Verdana, sans-serif;
-}
-
-.links {
-	height:12.5vh;
-	background-color:#4b2e83;
-}
-
-.title {
-	height:35%;
-	background-color:#36215e;
+	font-family:"Open Sans", Helvetica, Arial, Verdana, sans-serif;
 }
 
 #title {
@@ -21,4 +11,29 @@ body {
 	font-weight:bold;
 	display:inline-block;
 	text-align:center;
+	text-shadow:1.5px 1.5px #847348;
+}
+
+.navContainer {
+	height:12.5vh;
+	background-color:#4b2e83;
+}
+
+.navTopContainer a {
+	text-shadow:2px 2px grey;
+	color:white;
+	font-size:1.5em;
+	align-self:flex-end;
+	padding-right:1vw;
+}
+
+.navTopContainer a:hover {
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+.navTopContainer {
+	display:flex;
+	height:35%;
+	background-color:#36215e;
 }
