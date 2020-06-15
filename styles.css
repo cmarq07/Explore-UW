@@ -10,12 +10,14 @@ body {
 	font-weight:bold;
 	display:inline-block;
 	text-align:center;
-	text-shadow:1.5px 1.5px #847348;
+	text-shadow:3px 3px #847348;
 }
 
 .content {
 	background-color:white;
-	margin:100px 10vw 0 10vw;
+	margin:70px 5vw 70px 5vw;
+	border:2px solid rgba(217, 217, 217, 1);
+	border-radius:10px;
 }
 
 .navContainer {
