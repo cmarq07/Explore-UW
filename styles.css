@@ -13,6 +13,17 @@ body {
 	text-shadow:3px 3px #847348;
 }
 
+#copyright {
+		background-color:#36215e;
+		position:absolute;
+		width:100%;
+		padding:0.5vw 0 0.5vw 0;
+		font-size:2.5vh;
+		color:white;
+		text-align:center;
+		bottom:0;
+}
+
 .content {
 	background-color:white;
 	margin:70px 5vw 70px 5vw;
@@ -23,6 +34,19 @@ body {
 .navContainer {
 	height:100px;
 	background-color:#4b2e83;
+}
+
+.navTopContainer {
+	display:flex;
+	height:35%;
+	background-color:#36215e;
+}
+
+.navTopContainer span {
+	color:white;
+	font-size:1.5em;
+	align-self:flex-end;
+	padding-right:1vw;
 }
 
 .navTopContainer a {
@@ -36,10 +60,4 @@ body {
 	color:#b7a57a;
 	text-decoration:underline;
 	cursor:pointer;
-}
-
-.navTopContainer {
-	display:flex;
-	height:35%;
-	background-color:#36215e;
 }
