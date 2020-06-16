@@ -4,6 +4,19 @@ body {
 	font-family:"Open Sans", Helvetica, Arial, Verdana, sans-serif;
 }
 
+a {
+	color:#4b2e83;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#9c37d2;
+}
+
 #title {
 	color:#b7a57a;
 	font-size:3em;
