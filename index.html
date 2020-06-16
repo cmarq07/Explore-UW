@@ -4,39 +4,61 @@
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="prototype styles.css">
     </head>
-    
+
     <body>
-		<!-- Navigation bar -->
+		<!-- Title Banner -->
         <div class = "navContainer">
-			<div id = "navLinks" class = "navTopContainer">
-				<a href = "index.html" title = "Home">Home</a>
-				<span>//</span><a title = "Campus Map">The Campus Map</a>
-				<span>//</span><a href = "majors.html" title = "Majors">Majors</a>
-				<span>//</span><a title = "RSOs">RSOs</a>
-				<span>//</span><a title = "FAQ">FAQ</a>
-				<span>//</span><a href = "about.html" title = "About">About Us</a>
-			</div>
 			<div>
 				<text id = "title">Explore UW</text>
 			</div>
 		</div>
-		
-		<!-- Body -->
+
+    <div id="sideMenu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Walk Time Calculator</a>
+        <a href="#">Majors</a>
+        <a href="#">RSOs</a>
+        <a href="#">FAQ</a>
+        <a href="#">About Us</a>
+      </div>
+      <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
+      <script>
+      function openNav() {
+        document.getElementById("sideMenu").style.width = "200px";
+        document.getElementById("intro").style.marginLeft = "210px";
+        document.getElementById("title").style.marginLeft = "210px";
+        document.getElementById("disclaimer").style.marginLeft = "210px";
+      }
+
+      function closeNav() {
+        document.getElementById("sideMenu").style.width = "0";
+        document.getElementById("intro").style.marginLeft= "65px";
+        document.getElementById("title").style.marginLeft = "0";
+        document.getElementById("disclaimer").style.marginLeft = "65px";
+      }
+      </script>
+    <!-- Body -->
 		<div id = "intro" class = "content">
-			<h1>Hello There!</h1>
-			<p>Explore UW is a website that helps students, mainly first-years who are new to campus, 
-			navigate their way around. We offer a couple of different services, such as a campus map and 
-			distance calculator for your classes, an overview of the major system and how to pick a major 
-			that’s right for you, and also frequently asked questions (FAQ) about the school pulled 
-			directly from student sources like the r/udub Reddit and from students themselves.
+      <h1>Hello There!</h1>
+			<p>Explore UW is a website created to help current and prospective UW students to get to explore University of Washington.
+        We offer a couple of different services that we, as UW students, felt that it would have been helpful when we were first years.
+      <ul>
+        <li><b>Walk Time Calculator</b>: calculate the time it takes to travel between lecture halls and important buildings or place at UW.</li>
+        <li><b>Major Info</b>: an overview of the UW major system and summary of the admission requirement for each majors, so that you can plan ahead.</li>
+        <li><b>FAQ</b>: frequently asked questions (FAQ) about UW, which are from student sources like the r/udub Reddit and from students themselves.</li>
+      <ul>
+        We are working to add more features to improve student life and have better experience at UW.
+        If you have any questions or feedbacks, please email one of the creators in About Us page or leave a feedback on Feedback page.
 		</div>
-		<div class = "content">
-			<p>Explore UW is created by UW students; for UW students. 
+		<div id= "disclaimer" class = "content">
+			<p>Explore UW is created by UW students; for UW students.
 			This website is run by students, not the University of Washington.
 		</div>
-		
+
 		<!-- Copyright -->
 		<div id = "copyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
