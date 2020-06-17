@@ -17,14 +17,30 @@ a:visited {
 	color:#9c37d2;
 }
 
-.collapsible{
+h1 {
+	color:#4b2e83;
+}
+
+h2, h3 {
+	color:#201439;
+}
+
+.majorType {
+	color:#cf9f30;
+	text-shadow:1.2px 1.2px #847348;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.collapsible {
 	background-color: white;
 	color: black;
 	cursor: pointer;
 	padding: 20px;
 	width: 100%;
 	text-align: left;
-	font-size:15px;
+	font-size:16px;
+	font-weight:bold;
 	border:2px solid rgba(217, 217, 217, 1);
 	border-radius:10px;
 }
@@ -108,8 +124,18 @@ a:visited {
 }
 
 #copyright {
-		background-color:#36215e;
 		position:fixed;
+		background-color:#36215e;
+		width:100%;
+		padding:10px 0 10px 0;
+		font-size:20px;
+		color:white;
+		text-align:center;
+		bottom:0;
+}
+
+#scrollCopyright {
+		background-color:#36215e;
 		width:100%;
 		padding:10px 0 10px 0;
 		font-size:20px;
