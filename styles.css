@@ -92,7 +92,15 @@ a:visited {
 	display:inline-block;
 	text-shadow:3px 3px #847348;
 	transition: margin-left .5s;
+	text-decoration:none;
 	text-align:center;
+	user-drag: none; 
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor:pointer;
 }
 
 #disclaimer {
@@ -123,4 +131,14 @@ a:visited {
 .navContainer {
 	height:60px;
 	background-color:#4b2e83;
+}
+
+.unselectable {
+		user-drag: none; 
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		pointer-events: none;
 }
