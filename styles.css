@@ -17,6 +17,38 @@ a:visited {
 	color:#9c37d2;
 }
 
+.collapsible{
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	text-align: left;
+	font-size:15px;
+	border:2px solid rgba(217, 217, 217, 1);
+	border-radius:10px;
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.information{
+	padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #DBDBDB;
+}
+
+.active:after {
+	content: "\2212";
+}
+
 .sidenav {
   height:100%;
   width:0;
