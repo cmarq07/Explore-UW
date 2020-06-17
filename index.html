@@ -4,7 +4,7 @@
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
-		<link rel="stylesheet" type="text/css" href="prototype styles.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
     <body>
@@ -26,21 +26,7 @@
         <a href="#">About Us</a>
       </div>
       <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
-      <script>
-      function openNav() {
-        document.getElementById("sideMenu").style.width = "200px";
-        document.getElementById("intro").style.marginLeft = "210px";
-        document.getElementById("title").style.marginLeft = "210px";
-        document.getElementById("disclaimer").style.marginLeft = "210px";
-      }
-
-      function closeNav() {
-        document.getElementById("sideMenu").style.width = "0";
-        document.getElementById("intro").style.marginLeft= "65px";
-        document.getElementById("title").style.marginLeft = "0";
-        document.getElementById("disclaimer").style.marginLeft = "65px";
-      }
-      </script>
+      
     <!-- Body -->
 		<div id = "intro" class = "content">
       <h1>Hello There!</h1>
@@ -64,5 +50,20 @@
 		<div id = "copyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
 		</div>
+		<script>
+		  function openNav() {
+			document.getElementById("sideMenu").style.width = "200px";
+			document.getElementById("intro").style.marginLeft = "210px";
+			document.getElementById("title").style.marginLeft = "210px";
+			document.getElementById("disclaimer").style.marginLeft = "210px";
+		  }
+
+		  function closeNav() {
+			document.getElementById("sideMenu").style.width = "0";
+			document.getElementById("intro").style.marginLeft= "65px";
+			document.getElementById("title").style.marginLeft = "0";
+			document.getElementById("disclaimer").style.marginLeft = "65px";
+		  }
+      </script>
     </body>
 </html>

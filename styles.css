@@ -37,7 +37,7 @@ a:visited {
 	margin-left: 5px;
 }
 
-.information{
+.information {
 	padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -90,12 +90,13 @@ a:visited {
 	font-size:3em;
 	font-weight:bold;
 	display:inline-block;
-  transition: margin-left .5s;
-  text-align:center;
+	text-shadow:3px 3px #847348;
+	transition: margin-left .5s;
+	text-align:center;
 }
 
 #disclaimer {
-  transition: margin-left .5s;
+	transition: margin-left .5s;
 }
 
 #copyright {
@@ -116,10 +117,10 @@ a:visited {
 	border-radius:10px;
 	padding-left:10px;
 	padding-right:10px;
-  transition: margin-left .5s;
+	transition: margin-left .5s;
 }
 
 .navContainer {
-	height:50 px;
+	height:60px;
 	background-color:#4b2e83;
 }
