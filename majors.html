@@ -2,13 +2,133 @@
 <html>
     <head>
         <meta charset = "UTF-8">
-        <title>Explore UW Majors</title>
+        <title>Explore UW</title>
         <!--Linking to any external documents/images-->
+		<link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-    
+
     <body>
-        <h1>Hello World!</h1>
+		<!-- Title Banner -->
+        <div class = "navContainer">
+			<div>
+				<text id = "title">Explore UW</text>
+			</div>
+		</div>
+
+    <div id="sideMenu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Walk Time Calculator</a>
+        <a href="#">Majors</a>
+        <a href="#">RSOs</a>
+        <a href="#">FAQ</a>
+        <a href="#">About Us</a>
+      </div>
+      <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
+
+    <!-- Body -->
+    <div id = "intro" class = "content">
+      <p>There are many majors for undergraduates at UW to explore! We have gathered some of most popular majors at UW for you to consider.</p>
+      <p>Reminders:</p>
+      <ul>
+        <li><b>MR</b>: short for "Minimum Requirement", which means you have to complete Pre-Requisites to declare it as a major.</li>
+        <li><b>OM</b>: short for "Open Major", which means that the major will accept students at any time.</li>
+        <li><b>CC</b>: short for "Capacity Constraint", which means that completing Pre-Requisites will not guarantee admission to this major
+                and usually the admissions are competitive. There are specific admission period for each majors, so keep an eye out for theses dates.</li>
+      </ul>
+      <p> Disclaimer: These information are subject to change as departments make changes or new majors are added. We will update them as there are more changes.</p>
+    </div>
+
+    <h1>Arts</h1>
+
+    <button class ="collapsible"> Art: MR</button>
+    <div class = "information">
+      <p>Pre-Req: 5CR from ART 100~200 level.</p>
+      <p>If you want to declare Art as your major, it is encouraged for you to declare it early in your academic career.</p>
+      <p>Four Focuses</p>
+      <ul>
+        <li>Interdisciplinary Visual Art</li>
+        <li>Painting and Drawing</li>
+        <li>Photomedia</li>
+        <li>Three Dimensional Forum: Ceramics, Glass, Sculpture</li>
+      </ul>
+      <p>More information on <a href = "https://art.washington.edu/art/undergraduate-program"
+         target="_blank">art.washington.edu/art/undergraduate-program</a></li>
+		</div>
+
+    <button class ="collapsible"> Art History: MR</button>
+    <div class = "information">
+      <p>Pre-Req: No Pre-Req. Appointment with advisor</p>
+      <p>If you want to declare Art History as your major, it is encouraged for you to declare it early in your academic career.</p>
+      <p>More information on <a href = "https://art.washington.edu/art-history/admission-major-art-history"
+         target="_blank">art.washington.edu/art-history/admission-major-art-history</a></li>
+    </div>
+
+    <button class ="collapsible">Composition(Music): CC</button>
+    <div class = "information">
+    <p>Pre-Req: MUSIC 113/119, 120, 202/205, 216, 217 and 218</p>
+    <p>Additional requirements: Portfolio of recent work and Audition if the committee asks you.</p>
+    <p>Admission Period: Second year of study.</p>
+    <p>Encouraged to meet with a Composition Faculty Member.</p>
+    <p>More information on <a href = "https://music.washington.edu/bachelor-music-composition"
+       target="_blank">music.washington.edu/bachelor-music-composition</a></li>
+    <p>Audition information on <a href = "https://music.washington.edu/undergraduate-graduate-auditions"
+       target="_blank">music.washington.edu/undergraduate-graduate-auditions</a></li>
+    </div>
+
+    <button class ="collapsible">Dance: MR </button>
+    <div class = "information">
+      <p>Pre-Req: 5 credit from Dance 166 (5), 242 (3), 250 (5), 251 (5), 271 (1) or 493 (5).
+         Min 2.0 GPA. Registered in or successfully completed at least one technique course.</p>
+      <p>More information on <a href = "https://dance.washington.edu/undergraduate-programs"
+         target="_blank">dance.washington.edu/undergraduate-programs</a></li>
+      <p>And on <a href = "https://dance.washington.edu/ba-dance"
+         target="_blank">dance.washington.edu/ba-dance</a></li>
+    </div>
+
+    <button class ="collapsible"> </button>
+    <div class = "information">
+
+    </div>
+
+		<!-- Copyright -->
+		<div id = "copyright">
+			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
+		</div>
+
+    <!--SideMenu-->
+    <script>
+    function openNav() {
+      document.getElementById("sideMenu").style.width = "200px";
+      document.getElementById("intro").style.marginLeft = "210px";
+      document.getElementByClassName("title").style.marginLeft = "210px";
+      document.getElementById("disclaimer").style.marginLeft = "210px";
+    }
+
+    function closeNav() {
+      document.getElementById("sideMenu").style.width = "0";
+      document.getElementById("intro").style.marginLeft= "65px";
+      document.getElementById("title").style.marginLeft = "0";
+      document.getElementById("disclaimer").style.marginLeft = "65px";
+    }
+    </script>
+
+    <!--Collapsible-->
+    <script>
+    var majors = document.getElementsByClassName("collapsible");
+    var i;
+    for(i = 0; i < majors.length; i++){
+      majors[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var info = this.nextElementSibling;
+        if (info.style.maxHeight){
+          info.style.maxHeight = null;
+        } else {
+          info.style.maxHeight = info.scrollHeight + "px";
+        }
+      });
+    }
+    </script>
     </body>
 </html>
-
-    
