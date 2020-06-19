@@ -25,6 +25,11 @@ h2, h3 {
 	color:#201439;
 }
 
+.groups{
+transition: margin-left .5s;
+margin-left: 10px;
+}
+
 .majorType {
 	color:#cf9f30;
 	text-shadow:1.2px 1.2px #847348;
@@ -110,7 +115,7 @@ h2, h3 {
 	transition: margin-left .5s;
 	text-decoration:none;
 	text-align:center;
-	user-drag: none; 
+	user-drag: none;
 	user-select: none;
 	-moz-user-select: none;
 	-webkit-user-drag: none;
@@ -144,9 +149,25 @@ h2, h3 {
 		bottom:0;
 }
 
+#topBtn {
+	display: none;
+	position: fixed;
+	bottom: 10px;
+	right: 20px;
+	z-index: 99;
+	font-size: 20px;
+	background-color: indigo;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 10px;
+	display: block;
+	border: none;
+}
+
 .content {
 	background-color:white;
-	margin:70px 5vw 70px 5vw;
+	margin:30px 5vw 40px 5vw;
 	border:2px solid rgba(217, 217, 217, 1);
 	border-radius:10px;
 	padding-left:10px;
@@ -160,7 +181,7 @@ h2, h3 {
 }
 
 .unselectable {
-		user-drag: none; 
+		user-drag: none;
 		user-select: none;
 		-moz-user-select: none;
 		-webkit-user-drag: none;
