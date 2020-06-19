@@ -14,7 +14,10 @@
 				<a href = "index.html" title = "Home" id = "title">Explore UW</a>
 			</div>
 		</div>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
+    <!-- Side Menu -->
 		<div id="sideMenu" class="sidenav">
 		  <a href="javascript:void(0)" class="closebtn"
 			onclick="closeNav()">&times;</a>
@@ -39,17 +42,19 @@
 			<li><span class = "majorType">OM</span>: short for <em>"Open Major"</em>. The major will accept students at any time, provided
 			they have good academic standing.</li>
 		  </ul>
-		  <p><strong>Disclaimer:</strong> This information is subject to change as departments make changes or new majors are added. We will update them as there are more changes.
+		  <p><strong>Disclaimer:</strong> The information below are subject to change as departments make changes or new majors are added. We will update them as there are changes.
 		</div>
 
-		<h2 style = "margin-left:5vw">Browse by College</h2>
-		<div class = "content" style = "margin-top:0">
-		  <p><a href = "#ArtsAndSciences">College of Arts and Sciences</a>
-		  <p><a href = "#BuiltEnvironments">College of Built Environments</a>
-		  <p><a href = "#Education">College of Education</a>
-		  <p><a href = "#iSchool">Information School</a>
-		  <p><a href = "#Business">Michael G. Foster School of Business</a>
-		</div>
+    <div id = shortCuts class = groups style="margin-left: 0">
+      <h2 style = "margin-left: 65px">Browse by College</h2>
+      <div class= "content">
+    		  <p><a href = "#ArtsAndSciences">College of Arts and Sciences</a>
+    		  <p><a href = "#BuiltEnvironments">College of Built Environments</a>
+    		  <p><a href = "#Education">College of Education</a>
+    		  <p><a href = "#iSchool">Information School</a>
+    		  <p><a href = "#Business">Michael G. Foster School of Business</a>
+    	</div>
+    </div>
 
 		<div id = "ArtsAndSciences" class = "collegeAndMajorInfo">
 			<h1>College of Arts and Sciences</h1>
@@ -57,7 +62,7 @@
 				<h2>Arts</h2>
 				<!-- Art -->
 				<button class ="collapsible">Art <span class = "majorType">MR</span></button>
-				<div class = "information">
+				    <div class = "information">
 					<p>Pre-Req: 5CR from ART 100~200 level.
 					<p>If you want to declare Art as your major, it is encouraged for you to declare it early in your academic career.
 					<p>Four Focuses:
@@ -72,7 +77,7 @@
 				</div>
 				<!-- Art History -->
 				<button class ="collapsible">Art History <span class = "majorType">MR</span></button>
-				<div class = "information">
+				    <div class = "information">
 				  <p>Pre-Req: No Pre-Req. Appointment with advisor</p>
 				  <p>If you want to declare Art History as your major, it is encouraged for you to declare it early in your academic career.</p>
 				  <p>More information on <a href = "https://art.washington.edu/art-history/admission-major-art-history"
@@ -80,136 +85,165 @@
 				</div>
 				<!-- Music Composition -->
 				<button class ="collapsible">Composition (Music) <span class = "majorType">CC</span></button>
-				<div class = "information">
-				<p>Pre-Req: MUSIC 113/119, 120, 202/205, 216, 217 and 218</p>
-				<p>Additional requirements: Portfolio of recent work and Audition if the committee asks you.</p>
-				<p>Admission Period: Second year of study.</p>
-				<p>Encouraged to meet with a Composition Faculty Member.</p>
-				<p>More information on <a href = "https://music.washington.edu/bachelor-music-composition"
-				   target="_blank">music.washington.edu/bachelor-music-composition</a></li>
-				<p>Audition information on <a href = "https://music.washington.edu/undergraduate-graduate-auditions"
-				   target="_blank">music.washington.edu/undergraduate-graduate-auditions</a></li>
+  				<div class = "information">
+  				<p>Pre-Req: MUSIC 113/119, 120, 202/205, 216, 217 and 218</p>
+  				<p>Additional requirements: Portfolio of recent work and Audition if the committee asks you.</p>
+  				<p>Admission Period: Second year of study.</p>
+  				<p>Encouraged to meet with a Composition Faculty Member.</p>
+  				<p>More information on <a href = "https://music.washington.edu/bachelor-music-composition"
+  				   target="_blank">music.washington.edu/bachelor-music-composition</a></li>
+  				<p>Audition information on <a href = "https://music.washington.edu/undergraduate-graduate-auditions"
+  				   target="_blank">music.washington.edu/undergraduate-graduate-auditions</a></li>
 				</div>
 				<!-- Dance -->
 				<button class ="collapsible">Dance <span class = "majorType">MR</span></button>
-				<div class = "information">
-				  <p>Pre-Req: 5 credit from DANCE 166 (5), 242 (3), 250 (5), 251 (5), 271 (1) or 493 (5).
-					 Min 2.0 GPA. Registered in or successfully completed at least one technique course.</p>
-				  <p>More information on <a href = "https://dance.washington.edu/undergraduate-programs"
-					 target="_blank">dance.washington.edu/undergraduate-programs</a></li>
-				  <p>And on <a href = "https://dance.washington.edu/ba-dance"
-					 target="_blank">dance.washington.edu/ba-dance</a></li>
+  				<div class = "information">
+  				  <p>Pre-Req: 5 credit from DANCE 166 (5), 242 (3), 250 (5), 251 (5), 271 (1) or 493 (5).
+  					 Min 2.0 GPA. Registered in or successfully completed at least one technique course.</p>
+  				  <p>More information on <a href = "https://dance.washington.edu/undergraduate-programs"
+  					 target="_blank">dance.washington.edu/undergraduate-programs</a></li>
+  				  <p>And on <a href = "https://dance.washington.edu/ba-dance"
+  					 target="_blank">dance.washington.edu/ba-dance</a></li>
 				</div>
         <!-- Design -->
-        <button class ="collapsible">Design<span class = "majorType">CC</span></button>
-				<div class = "information">
-					<p>Pre-Req: DESIGN 166, offered Winter and Spring
-					<p>If your GPA for DESIGN 166 is higher than 3.7, automatically accepted into BDes program for autumn quarter.
-          <p>If less than 3.7, must submit BDes application.
-          <p>Three Focuses:
-					<ul>
-						<li>Interaction Design</li>
-						<li>Visual Communication Design</li>
-						<li>Industrial Design</li>
-					</ul>
-					<p>More information on <a href = "https://art.washington.edu/design/bachelor-design-admissions"
-					 target="_blank">art.washington.edu/design/bachelor-design-admissions</a></li>
-				</div>
+        <button class ="collapsible">Design <span class = "majorType">CC</span></button>
+          <div class = "information">
+          	<p>Pre-Req: DESIGN 166, offered Winter and Spring
+          	<p>If your GPA for DESIGN 166 is higher than 3.7, automatically accepted into BDes program for autumn quarter.
+            <p>If less than 3.7, must submit BDes application.
+            <p>Three Focuses:
+          	<ul>
+          		<li>Interaction Design</li>
+          		<li>Visual Communication Design</li>
+          		<li>Industrial Design</li>
+          	</ul>
+          	<p>More information on <a href = "https://art.washington.edu/design/bachelor-design-admissions"
+          	 target="_blank">art.washington.edu/design/bachelor-design-admissions</a></li>
+          </div>
         <!-- Drama -->
-        <button class ="collapsible">Drama<span class = "majorType">MR</span></button>
-        <div class = "information">
-          <p>Pre-Req: 2.50 GPA or higher in DRAMA 201.
-          <p>Must meet with Drama Advisor.
-          <p>Three Focuses:
-          <ul>
-            <li>History, Theory, and Criticism</li>
-            <li>Performance</li>
-            <li>Design</li>
-          </ul>
-          <p>More information on <a href = "https://drama.washington.edu/core-requirements-ba-degree-drama"
-           target="_blank">drama.washington.edu/core-requirements-ba-degree-drama</a></li>
-        </div>
+        <button class ="collapsible">Drama <span class = "majorType">MR</span></button>
+          <div class = "information">
+            <p>Pre-Req: 2.50 GPA or higher in DRAMA 201.
+            <p>Must meet with Drama Advisor.
+            <p>Three Focuses:
+            <ul>
+              <li>History, Theory, and Criticism</li>
+              <li>Performance</li>
+              <li>Design</li>
+            </ul>
+            <p>More information on <a href = "https://drama.washington.edu/core-requirements-ba-degree-drama"
+             target="_blank">drama.washington.edu/core-requirements-ba-degree-drama</a></li>
+          </div>
       <!-- Humanities -->
         <h2>Humanities</h2>
         <!-- Cinema and Media Studies-->
-        <button class ="collapsible">Cinema and Media Studies<span class = "majorType">MR</span></button>
-				<div class = "information">
-				  <p>Pre-Req:Min 2.0 GPA. Completion of English Composition requirement(C) or a W-course and one from the following classes</p>
-          <ul>
-            <li>CMS 270</li>
-            <li>CMS 271</li>
-            <li>CMS 272</li>
-            <li>CMS 273</li>
-            <li>CMS 274</li>
-            <li>CMS 275</li>
-          </ul>
-          <P>Note: These classes are great to take even if you are not intended for CMS major. Who doesn't like films?
-				  <p>More information on <a href = "https://cinema.washington.edu/ba-cinema-media-studies"
-					 target="_blank">cinema.washington.edu/ba-cinema-media-studies</a></li>
-				</div>
+        <button class ="collapsible">Cinema and Media Studies <span class = "majorType">MR</span></button>
+          <div class = "information">
+            <p>Pre-Req:Min 2.0 GPA. Completion of English Composition requirement(C) or a W-course and one from the following classes</p>
+            <ul>
+              <li>CMS 270</li>
+              <li>CMS 271</li>
+              <li>CMS 272</li>
+              <li>CMS 273</li>
+              <li>CMS 274</li>
+              <li>CMS 275</li>
+            </ul>
+            <P>Note: These classes are great to take even if you are not intended for CMS major. Who doesn't like films?
+            <p>More information on <a href = "https://cinema.washington.edu/ba-cinema-media-studies"
+          	 target="_blank">cinema.washington.edu/ba-cinema-media-studies</a></li>
+          </div>
         <!-- Asian Language-->
         <button class ="collapsible">Chinese, Japanese, Korean, South Asian Languages(Hindi or Sanskrit)
           <span class = "majorType">MR</span></button>
-				<div class = "information">
-				  <p>Pre-Req: Completion of at least 20 credits in your intended language. The most recent course in your intended language must
-                      be 2.5 or higher. One W course conducted in English.
-				  <p>More information on <a href = "https://asian.washington.edu/admissions-incoming-freshmen-current-students"
-					 target="_blank">asian.washington.edu/admissions-incoming-freshmen-current-students</a></li>
-				</div>
+    				<div class = "information">
+    				  <p>Pre-Req: Completion of at least 20 credits in your intended language. The most recent course in your intended language must
+                          be 2.5 or higher. One W course conducted in English.
+    				  <p>More information on <a href = "https://asian.washington.edu/admissions-incoming-freshmen-current-students"
+    					 target="_blank">asian.washington.edu/admissions-incoming-freshmen-current-students</a></li>
+    				</div>
 
 			<!-- Natural Sciences -->
 				<h2>Natural Sciences</h2>
 				<!-- Computer Science -->
 				<button class ="collapsible">Computer Science <span class = "majorType">CC</span></button>
-				<div class = "information">
-					<p>Hosted through the Paul G. Allen School of Computer Science, which offers a B.S degree
-					with a major in Computer Science or a B.S in computer engineering. The former will be covered
-					here.
-					<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
-					Regular Admissions, Transfer Admissions</em>
-					<p><strong>Regular Admission Pre-Reqs:</strong>
-					<ul>
-						<li>MATH Series (MATH 124, 125, and 126 or equivalent)</li>
-						<li>5 Natural World Cr - Including one of the following or equivalent:
-						<ul>
-							<li>PHYS 121</li>
-							<li>CHEM 142/145</li>
-							<li>BIOL 180</li>
-						</ul>
-						<li>CSE 142</li>
-						<li>CSE 143</li>
-						<li>At least 5 English Composition Cr</li>
-					</ul>
-					<p><strong>Transfer Admission Pre-Reqs:</strong> Minimum 30 graded college credits before transfer
-					<ul>
-						<li>MATH Series (MATH 124, 125, and 126 or equivalent)</li>
-						<li>Completion of one of the following courses or equivalent:
-						<ul>
-							<li>PHYS 121</li>
-							<li>CHEM 142</li>
-							<li>BIOL 180</li>
-						</ul>
-						<li>CSE 142</li>
-						<li>CSE 143</li>
-						<li>At least 5 English Composition Cr</li>
-					</ul>
-					<p>This is arguably the <em>most</em> selective major offered at UW. Maybe, along with Computational
-					Engineering, it is in the top 3 of hardest majors to get into. Computer Science recently transitioned
-					so that if you are not a Freshman Direct Admit or a Transfer student, your odds of getting in through
-					regular admission are EXTREMELY (almost 0) low, unless you discovered the major late in your college
-					career. There is little point in applying if you do not fit these aforementioned categories.
-					<p>More information on <a href = "https://www.cs.washington.edu/academics/ugrad/admissions"
-					 target="_blank">cs.washington.edu/academics/ugrad/admissions</a></li>
-				</div>
+  				<div class = "information">
+  					<p>Hosted through the Paul G. Allen School of Computer Science, which offers a B.S degree
+  					with a major in Computer Science or a B.S in computer engineering. The former will be covered
+  					here.
+  					<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
+  					Regular Admissions, Transfer Admissions</em>
+  					<p><strong>Regular Admission Pre-Reqs:</strong>
+  					<ul>
+  						<li>MATH Series (MATH 124, 125, and 126 or equivalent)</li>
+  						<li>5 Natural World Cr - Including one of the following or equivalent:
+  						<ul>
+  							<li>PHYS 121</li>
+  							<li>CHEM 142/145</li>
+  							<li>BIOL 180</li>
+  						</ul>
+  						<li>CSE 142</li>
+  						<li>CSE 143</li>
+  						<li>At least 5 English Composition Cr</li>
+  					</ul>
+  					<p><strong>Transfer Admission Pre-Reqs:</strong> Minimum 30 graded college credits before transfer
+  					<ul>
+  						<li>MATH Series (MATH 124, 125, and 126 or equivalent)</li>
+  						<li>Completion of one of the following courses or equivalent:
+  						<ul>
+  							<li>PHYS 121</li>
+  							<li>CHEM 142</li>
+  							<li>BIOL 180</li>
+  						</ul>
+  						<li>CSE 142</li>
+  						<li>CSE 143</li>
+  						<li>At least 5 English Composition Cr</li>
+  					</ul>
+  					<p>Most of students in Computer Science major enters via Direct Admission(roughly 50% to 55%) and transfer admission
+               (roughly 15% to 20%). The department states that it leaves 30% of their spot for current UW students. Even though
+               this percentage may seem doable to some, the applicant numbers are increasing each admission term and the
+               CS department stated that these seats are mostly for UW students who found interest in CS after enrolling at UW.
+               While the Current Student Admission rate is 20% to 25%, if you were not offered Direct Admission and planning to get in
+               by Current Student Admission, the chances are extremely low. The Allen school says you should come to UW to study CS
+               <strong>"only if you are willing to pursue a concentration in CS through [their] non-major courses"</strong>, if you are not a
+               Direct Admit. Below are other options for Computer Science that you could focus on rather than CS:
+               <ul>
+                 <li>Applied and Computational Mathematical Science(ACMS)</li>
+                 <li>Informatics</li>
+                 <li>Geography: Data Science</li>
+                 <li>Statistics: Data Science</li>
+               </ul>
+            <p>Information for UW students who are not Direct Admits to Allen School who wants to study CS on <a href =
+               "https://www.cs.washington.edu/academics/ugrad/admissions/freshmen" target="_blank">
+                cs.washington.edu/academics/ugrad/admissions/freshmen</a>
+  					<p>More information on <a href = "https://www.cs.washington.edu/academics/ugrad/admissions"
+  					 target="_blank">cs.washington.edu/academics/ugrad/admissions</a>
+  				</div>
+        <!-- Statistics -->
+        <button class ="collapsible">Statistics <span class = "majorType">CC</span></button>
+          <div class = "information">
+            <p><strong>Pre-Req:</strong> The regular calculus series MATH 124, 125, 126 (or MATH(honors) 134, 135, 136).
+                                Statistics department also requires MATH 324, one of STAT 311(highly recommended) or STAT 390, and one of CSE 142 or CSE 160 for admission.
+            <p><strong>Admission Cycle:</strong> Spring Quarter, third Friday in April.
+            <p><strong>Note:</strong> The Statistics department made changes to the requirements for admission. Math 307, 308 and CSE 143 have been removed for admission,
+                            but they are still part of the major requirements(different from admission requirements). Math 324 can be taken after MATH 126 or 136.
+                            Additionally, the Statistics department changed admission cycle from fall to <strong>Spring</strong>.
+            <p><strong>Two focuses:</strong>
+              <ul>
+                <li>Statistics</li>
+                <li>Statistics: Data Science</li>
+              </ul>
+            <p>More information on <a href = "https://www.stat.washington.edu/academics/undergraduate/application"
+             target="_blank">stat.washington.edu/academics/undergraduate/application</a></li>
+          </div>
 			<!-- Social Sciences -->
 				<h2>Social Sciences</h2>
-				<!-- Computer Science -->
+				<!-- GWSS -->
 				<button class ="collapsible">Gender, Women, and Sexuality Studies <span class = "majorType">OM</span></button>
-				<div class = "information">
-					<p><strong>Pre-Req:</strong> Minimum 2.0 Cumulative College GPA to declare major
-					<p>More information on <a href = "https://gwss.washington.edu/gwss-major"
-					 target="_blank">gwss.washington.edu/gwss-major</a></li>
-				</div>
+  				<div class = "information">
+  					<p><strong>Pre-Req:</strong> Minimum 2.0 Cumulative College GPA to declare major
+  					<p>More information on <a href = "https://gwss.washington.edu/gwss-major"
+  					 target="_blank">gwss.washington.edu/gwss-major</a></li>
+  				</div>
 		</div>
 
 		<div id = "BuiltEnvironments" class = "collegeAndMajorInfo">
@@ -228,25 +262,25 @@
 			<h1>Information School</h1>
 			<!-- Informatics -->
 			<button class ="collapsible">Informatics <span class = "majorType">CC</span></button>
-			<div class = "information">
-				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
-				Regular Admissions, Transfer Admissions</em>
-				<p><strong>Regular Admission Pre-Reqs:</strong> Minimum 2.0 Cumulative College GPA
-				<ul>
-					<li>INFO 200</li>
-					<li>CSE 142 OR 143 or equivalent</li>
-					<li>STAT 221 or equivalent</li>
-					<li>One English Composition course from the list on the iSchool website</li>
-					<li>Minimum 2.0 GPA in all above courses</li>
-				</ul>
-				<p>Informatics is a capacity-constrained/selective major with a LOT of applicants. Many who come to UW for
-				CSE and do not get in choose this major as a secondary option. As a result, there is a 2 application maximum,
-				so it is encouraged to make yourself competitive with above average grades (around ~3.5) and a great
-				admissions essay.
-				<p>More information on <a href = "https://ischool.uw.edu/programs/informatics/admissions"
-				 target="_blank">ischool.uw.edu/programs/informatics/admissions</a>
-			</div>
-		</div>
+  			<div class = "information">
+  				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
+  				Regular Admissions, Transfer Admissions</em>
+  				<p><strong>Regular Admission Pre-Reqs:</strong> Minimum 2.0 Cumulative College GPA
+  				<ul>
+  					<li>INFO 200</li>
+  					<li>CSE 142 OR 143 or equivalent</li>
+  					<li>STAT 221 or equivalent</li>
+  					<li>One English Composition course from the list on the iSchool website</li>
+  					<li>Minimum 2.0 GPA in all above courses</li>
+  				</ul>
+  				<p>Informatics is a capacity-constrained/selective major with a LOT of applicants. Many who come to UW for
+  				CSE and do not get in choose this major as a secondary option. As a result, there is a 2 application maximum,
+  				so it is encouraged to make yourself competitive with above average grades (around ~3.5) and a great
+  				admissions essay.
+  				<p>More information on <a href = "https://ischool.uw.edu/programs/informatics/admissions"
+  				 target="_blank">ischool.uw.edu/programs/informatics/admissions</a>
+  			</div>
+  		</div>
 
 		<div id = "Business" class = "collegeAndMajorInfo">
 			<h1>Michael G. Foster School of Business</h1>
@@ -261,6 +295,8 @@
 		<script>
 			var majors = document.getElementsByClassName("collapsible");
 			var i;
+      		var button = document.getElementById("topBtn");
+
 			for(i = 0; i < majors.length; i++){
 			  majors[i].addEventListener("click", function() {
 				this.classList.toggle("active");
@@ -275,16 +311,23 @@
 			function openNav() {
 			  document.getElementById("sideMenu").style.width = "200px";
 			  document.getElementById("intro").style.marginLeft = "210px";
-			  document.getElementById("title").style.marginLeft = "210px";
+        	  document.getElementById("shortCuts").style.marginLeft = "145px";
+              document.getElementById("title").style.marginLeft = "210px";
 			  document.getElementById("disclaimer").style.marginLeft = "210px";
 			}
 
 			function closeNav() {
 			  document.getElementById("sideMenu").style.width = "0";
 			  document.getElementById("intro").style.marginLeft= "65px";
-			  document.getElementById("title").style.marginLeft = "0";
+              document.getElementById("shortCuts").style.marginLeft = "0px";
+              document.getElementById("title").style.marginLeft = "0";
 			  document.getElementById("disclaimer").style.marginLeft = "65px";
 			}
+
+		    function topFunction() {
+			  document.body.scrollTop = 0;
+			  document.documentElement.scrollTop = 0;
+		  }
 		</script>
     </body>
 </html>
