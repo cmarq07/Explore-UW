@@ -26,49 +26,64 @@
         <a href = "about.html" title = "About">About Us</a>
       </div>
       <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
-      <script>
-      function openNav() {
-        document.getElementById("sideMenu").style.width = "200px";
-        document.getElementById("title").style.marginLeft = "210px";
-        document.getElementById("creatorOne").style.marginLeft= "210px";
-        document.getElementById("creatorTwo").style.marginLeft = "210px";
-      }
 
-      function closeNav() {
-        document.getElementById("sideMenu").style.width = "0";
-        document.getElementById("title").style.marginLeft = "0";
-        document.getElementById("creatorOne").style.marginLeft= "65px";
-        document.getElementById("creatorTwo").style.marginLeft = "65px";
-      }
-      </script>
     <!-- Body -->
-    <div id = "creatorOne" class = "content">
-			<h1>Christian Calloway | <span style="color: indigo">UW '23</span></h1>
-			<ul>
-				<li>Born and raised in Washington</li>
-				<li>Graduated from Hazen High School with a diploma and
-				also an AA degree from Running Start</li>
-				<li>Came to UW with a few of my friends and got involved
-				with a couple clubs, including the Brotherhood Initiative and Dawgs Crew</li>
-				<li>Passionate about working with computer technology. Currently majoring in Informatics
-				in hopes I one day create my own business centered around a game or app</li>
-				<li>Website: <a href = "https://www.cmarqc.com">cmarqc.com</a></li>
-				<li>Contact: <a href = "mailto: cmarq07@uw.edu">cmarq07@uw.edu</a></li>
-		</div>
-		<div id = "creatorTwo" class = "content">
-			<h1>Junyi Lee | <span style="color: indigo">UW '23</span></h1>
-			<ul>
-				<li>Born in South Korea.</li>
-				<li>Lived in Taiwan. Currently living in Portland, Oregon.</li>
-				<li>Graduated from Valley Catholic Highschool.</li>
-				<li>Passionate about helping others.</li>
-				<li>Cinema and Media Studies student.</li>
-				<li>Website: <a href = "https://junebugs.blog/">junebugs.blog</a></li>
-				<li>Contact: <a href = "mailto: jlee0611@uw.edu">jlee0611@uw.edu</a></li>
-		</div>
+    <div id = "creators" class = "groups">
+      <h1>Developers</h1>
+      <div class = "content">
+  			<h1>Christian Calloway | <span style="color: indigo">UW '23</span></h1>
+  			<ul>
+  				<li>Born and raised in Washington</li>
+  				<li>Graduated from Hazen High School with a diploma and
+  				also an AA degree from Running Start</li>
+  				<li>Came to UW with a few of my friends and got involved
+  				with a couple clubs, including the Brotherhood Initiative and Dawgs Crew</li>
+  				<li>Passionate about working with computer technology. Currently majoring in Informatics
+  				in hopes I one day create my own business centered around a game or app</li>
+  				<li>Website: <a href = "https://www.cmarqc.com">cmarqc.com</a></li>
+  				<li>Contact: <a href = "mailto: cmarq07@uw.edu">cmarq07@uw.edu</a></li>
+  		</div>
+  		<div class = "content">
+  			<h1>Junyi Lee | <span style="color: indigo">UW '23</span></h1>
+  			<ul>
+  				<li>Born in South Korea.</li>
+  				<li>Currently living in Portland, Oregon.</li>
+  				<li>Graduated from Valley Catholic Highschool.</li>
+  				<li>Passionate about films and media</li>
+  				<li>Currently majoring in Cinema and Media Studies.</li>
+  				<li>Website: <a href = "https://junebugs.blog/">junebugs.blog</a></li>
+  				<li>Contact: <a href = "mailto: jlee0611@uw.edu">jlee0611@uw.edu</a></li>
+  		</div>
+    </div>
+
+    <div id = "contributers" class = "groups">
+      <h1>Contributers</h1>
+      <div class = "content">
+      <p>Connor Espig | <span style="color: indigo">UW '23</span></li>
+        <ul>
+          <li>Intended for ACMS major</li>
+          <li>Advices on Greek Life</li>
+      </div>
+    </div>
 		<!-- Copyright -->
 		<div id = "copyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
 		</div>
+
+    <script>
+    function openNav() {
+      document.getElementById("sideMenu").style.width = "200px";
+      document.getElementById("title").style.marginLeft = "210px";
+      document.getElementById("creators").style.marginLeft = "210px";
+      document.getElementById("contributers").style.marginLeft = "210px";
+    }
+
+    function closeNav() {
+      document.getElementById("sideMenu").style.width = "0";
+      document.getElementById("title").style.marginLeft = "0";
+      document.getElementById("creators").style.marginLeft = "10px";
+      document.getElementById("contributers").style.marginLeft = "10px";
+    }
+    </script>
     </body>
 </html>
