@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
@@ -28,7 +29,7 @@
       <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
 
     <!-- Body -->
-    <div id = "creators" class = "groups">
+    <div id = "creators" class = "groups" style= "display: none;">
       <h1>Developers</h1>
       <div class = "content">
   			<h1>Christian Calloway | <span style="color: indigo">UW '23</span></h1>
@@ -56,10 +57,10 @@
   		</div>
     </div>
 
-    <div id = "contributers" class = "groups">
+    <div id = "contributers" class = "groups" style= "display: none;">
       <h1>Contributers</h1>
       <div class = "content">
-      <p>Connor Espig | <span style="color: indigo">UW '23</span></li>
+      <h1>Connor Espig | <span style="color: indigo">UW '23</span></h1>
         <ul>
           <li>Intended for ACMS major</li>
           <li>Advices on Greek Life</li>
@@ -84,6 +85,10 @@
       document.getElementById("creators").style.marginLeft = "10px";
       document.getElementById("contributers").style.marginLeft = "10px";
     }
+
+    $(document).ready(function() {
+      $("div.groups").fadeIn(1400);
+    });
     </script>
     </body>
 </html>
