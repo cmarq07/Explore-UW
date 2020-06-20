@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
@@ -28,7 +29,7 @@
       <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
 
     <!-- Body -->
-		<div id = "intro" class = "content">
+		<div id = "intro" class = "content" style= "display: none;">
       <h1>Hello There!</h1>
 			<p>Explore UW is a website created to help current and prospective UW students to get to explore University of Washington.
         We offer a couple of different services that we, as UW students, felt that it would have been helpful when we were first years.
@@ -42,7 +43,7 @@
         feedbacks, please email one of the developers on <a href="about.html"><b>About Us</b></a> page.<br />
         <br />
 		</div>
-		<div id= "disclaimer" class = "content">
+		<div id= "disclaimer" class = "content" style= "display: none;">
 			<p>Explore UW is created by UW students; for UW students.
 			This website is run by students, not the University of Washington.
 		</div>
@@ -51,6 +52,7 @@
 		<div id = "copyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
 		</div>
+
 		<script>
 		  function openNav() {
 			document.getElementById("sideMenu").style.width = "200px";
@@ -64,7 +66,11 @@
 			document.getElementById("intro").style.marginLeft= "65px";
 			document.getElementById("title").style.marginLeft = "0";
 			document.getElementById("disclaimer").style.marginLeft = "65px";
-		  }
-    </script>
-	</body>
+      }
+
+      $(document).ready(function() {
+        $("div.content").fadeIn(1400);
+      });
+      </script>
+    </body>
 </html>
