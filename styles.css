@@ -9,6 +9,18 @@ a {
 	text-decoration:none;
 }
 
+#majorSearch {
+	background-color:white;
+	height:30px;
+	width:25%;
+	margin:0 5vw 40px 5vw;
+	border:2px solid rgba(217, 217, 217, 1);
+	border-radius:10px;
+	padding-left:10px;
+	padding-right:10px;
+	outline:none;
+}
+
 a:hover {
 	text-decoration:underline;
 }
@@ -25,7 +37,7 @@ h2, h3 {
 	color:#201439;
 }
 
-.groups{
+.groups {
 transition: margin-left .5s;
 margin-left: 10px;
 }
