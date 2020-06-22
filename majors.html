@@ -46,7 +46,7 @@
 		  <p><strong>Disclaimer:</strong> The information below are subject to change as departments make changes or new majors are added. We will update them as there are changes.
 		</div>
 
-    <div id = shortCuts class = groups style="display: none; margin-left: 0">
+    <div id = "shortcuts" class = "groups" style="display: none; margin-left: 0">
       <h2 style = "margin-left: 65px">Browse by College</h2>
       <div class= "content">
     		  <p><a href = "#ArtsAndSciences">College of Arts and Sciences</a>
@@ -54,7 +54,14 @@
     		  <p><a href = "#Education">College of Education</a>
     		  <p><a href = "#iSchool">Information School</a>
     		  <p><a href = "#Business">Michael G. Foster School of Business</a>
+			  <p><a href = "#PublicHealth">School of Public Health</a>
     	</div>
+    </div>
+	
+	<div>
+		<h2 style = "margin-left: 65px">Search by Major</h2>
+		<input id = "majorSearch" type = "search" placeholder = "Enter a specific major name (e.g: Informatics)" 
+				maxlength = "40"></input>
     </div>
 
 		<div id = "ArtsAndSciences" class = "collegeAndMajorInfo">
@@ -187,6 +194,95 @@
             <p>More information on <a href = "https://acms.washington.edu/applying"
                target="_blank">acms.washington.edu/applying</a></li>
           </div>
+		  <!-- Chemistry -->
+        <button class ="collapsible">Chemistry <span class = "majorType">CC</span></button>
+          <div class = "information">
+			<p>Chemistry offers 3 (4 including the minor) 
+			degree options with a variance in degree requirements for each:
+			<ul>
+				<li>B.A</li>
+				<li>B.S</li>
+				<li>ACS Certified (B.S)</li>
+			</ul>
+			<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
+					     Research/Honors, Early Admissions, Regular Admissions</em>
+            <p><strong>Freshman Direct Admission Pre-Reqs:</strong>
+  					<ul>
+  						<li>Open to freshman students formally accepted to UW</li>
+  						<li>List Chemistry as first-choice major</li>
+  						<li>Admits usually score a minimum of 1400 SAT or 30 ACT</li>
+  						<li>Autumn Quarter Only</li>
+  					</ul>
+  					<p><strong>Research/Honors Application:</strong>
+  					<ul>
+  						<li>Cover Sheet (Available on the Chem department website)</li>
+  						<li>Unofficial Transcript (Usually includes "exceptional" academic records)</li>
+  						<li>Statement of purpose (i.e interest in Chemistry, career goals, undergraduate
+						research interests, degree interest, etc.)</li>
+  						<li><em>(Research Track Only)</em> Written letter of reccomendation from
+						academic advisor</li>
+  					</ul>
+					<p><strong>Early Admission Pre-Reqs:</strong>
+  					<ul>
+  						<li>CHEM Series OR Accelerated CHEM Series OR Honors CHEM Series</li>
+						<ul>
+  							<li>CHEM 142 / CHEM 143 / CHEM 145</li>
+  							<li>CHEM 152 / CHEM 153 / CHEM 155</li>
+  							<li>BIOL 162 / CHEM 163 / CHEM 165</li>
+  						</ul>
+  						<li>PHYS Courses (Recommended)</li>
+  						<ul>
+  							<li>PHYS 121 / PHYS 114</li>
+  							<li>PHYS 122 / PHYS 115</li>
+  						</ul>
+  						<li>MATH Courses</li>
+  						<ul>
+  							<li>MATH 124 / MATH 134</li>
+  							<li>MATH 125 / MATH 135</li>
+  						</ul>
+  						<li>Admissions Factors: </li>
+						<ul>
+							<li>GPA (3.20 or greater for B.S and BS-ACS Certified, 3.0 or greater
+							for B.A)</li>
+							<li>Overall Course Rigor</li>
+							<li>Frequency of Withdrawal / Incomplete Grades</li>
+							<li># of repeated courses</li>
+							<li>Relevant work and life experience</li>
+							<li>Record of honors</li>
+						</ul>
+  					</ul>
+					<p><strong>Regular Admission Pre-Reqs:</strong>
+  					<ul>
+  						<li>CHEM Series OR Accelerated CHEM Series OR Honors CHEM Series</li>
+						<ul>
+  							<li>CHEM 142 / CHEM 143 / CHEM 145</li>
+  							<li>CHEM 152 / CHEM 153 / CHEM 155</li>
+  							<li>BIOL 162 / CHEM 163 / CHEM 165</li>
+  						</ul>
+  						<li>PHYS Courses (Recommended)</li>
+  						<ul>
+  							<li>PHYS 121 / PHYS 114</li>
+  							<li>PHYS 122 / PHYS 115</li>
+  						</ul>
+  						<li>MATH Courses</li>
+  						<ul>
+  							<li>MATH 124 / MATH 134</li>
+  							<li>MATH 125 / MATH 135</li>
+  						</ul>
+  						<li>Admissions Factors: </li>
+						<ul>
+							<li>GPA (3.20 or greater for B.S and BS-ACS Certified, 3.0 or greater
+							for B.A)</li>
+							<li>Overall Course Rigor</li>
+							<li>Frequency of Withdrawal / Incomplete Grades</li>
+							<li># of repeated courses</li>
+							<li>Relevant work and life experience</li>
+							<li>Record of honors</li>
+						</ul>
+  					</ul>
+            <p>More information on <a href = "http://depts.washington.edu/chem/undergrad/entrance/index.html"
+    					 target="_blank">depts.washington.edu/chem/undergrad/entrance/index.html</a></li>
+          </div>
         <!-- Computer Science -->
         <button class ="collapsible">Computer Science <span class = "majorType">CC</span></button>
           <div class = "information">
@@ -282,6 +378,13 @@
           </div>
       <!-- Social Sciences -->
 				<h2>Social Sciences</h2>
+				<!-- Geography -->
+				<button class ="collapsible">Geography <span class = "majorType">OM</span></button>
+  				<div class = "information">
+  					<p><strong>Pre-Req:</strong> Minimum 2.0 Cumulative College GPA to declare major
+  					<p>More information on <a href = "https://geography.washington.edu/undergraduate-programs"
+  					 target="_blank">geography.washington.edu/undergraduate-programs</a></li>
+  				</div>
 				<!-- GWSS -->
 				<button class ="collapsible">Gender, Women, and Sexuality Studies <span class = "majorType">OM</span></button>
   				<div class = "information">
@@ -289,10 +392,101 @@
   					<p>More information on <a href = "https://gwss.washington.edu/gwss-major"
   					 target="_blank">gwss.washington.edu/gwss-major</a></li>
   				</div>
+				<!-- Sociology -->
+				<button class ="collapsible">Political Science <span class = "majorType">MR</span></button>
+  				<div class = "information">
+  					<p><strong>Pre-Reqs:</strong> 
+					<ul>
+						<li>15 Intro PolySci Cr</li>
+						<ul>
+							<li>POL S 101</li>
+							<li>POL S 201</li>
+							<li>POL S 202</li>
+							<li>POL S 203</li>
+							<li>POL S 204</li>
+							<li>POL S 205</li>
+						</ul>
+						<li>Minimum 2.0 GPA in all above courses</li>
+						<li>Minimum 2.0 cumulative GPA</li>
+					</ul>
+  					<p>More information on <a href = "https://soc.washington.edu/admissions"
+  					 target="_blank">soc.washington.edu/admissions</a></li>
+  				</div>
+				<!-- Sociology -->
+				<button class ="collapsible">Sociology <span class = "majorType">MR</span></button>
+  				<div class = "information">
+  					<p><strong>Pre-Reqs:</strong> 
+					<ul>
+						<li>10 Intro Sociology Cr</li>
+						<ul>
+							<li>SOC 300</li>
+							<li>Any additional 5 Cr Sociology Course</li>
+						</ul>
+						<li>Minimum 2.0 GPA in all above courses</li>
+					</ul>
+  					<p>More information on <a href = "https://soc.washington.edu/admissions"
+  					 target="_blank">soc.washington.edu/admissions</a></li>
+  				</div>
 		</div>
 
 		<div id = "BuiltEnvironments" class = "collegeAndMajorInfo">
 			<h1>College of Built Environments</h1>
+			<!-- Architecture -->
+			<button class ="collapsible">Architecture <span class = "majorType">CC</span></button>
+  			<div class = "information">
+  				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
+  				Sophomore Admissions, Transfer Admissions, Upper-Division Admission Requirements</em>
+				<p><strong>Freshman Direct Admission Pre-Req:</strong> Indicate as first-choice major on UW 
+				Application
+  				<p><strong>Sophomore Admission Pre-Reqs:</strong>
+  				<ul>
+  					<li>Submitted application by the first Monday of Spring Quarter</li>
+  					<li>Admissions Factors:</li>
+					<ul>
+						<li>Prior academic performance (GPA) and potential</li>
+						<li>Relevant and quality work/life experience</li>
+						<li>Personal motives</li>
+					</ul>
+  				</ul>
+				<p><strong>Transfer Admission Pre-Reqs:</strong>
+  				<ul>
+  					<li>Sophomore-year transfer students must complete all requirements listed as
+					Upper-Division Admission Requirements as well as all major requirements</li>
+					<li>Junior-year transfer students must complete all requirements listed as
+					Upper-Division Admission Requirements as well as all major requirements, and
+					it is highly encouraged to complete all preparatory architecture coursework 
+					before entry.</li>
+  				</ul>
+				<p><strong>Upper-Divison Admission Pre-Reqs:</strong>
+  				<ul>
+  					<li>90 or more credits by quarter of admission</li>
+  					<li>19 Preparatory Architectural Coursework Cr</li>
+					<ul>
+						<li>ARCH 200</li>
+						<li>ARCH 231</li>
+						<li>ARCH 350</li>
+						<li>ARCH 351</li>
+						<li>ARCH 352</li>
+					</ul>
+					<li>Gen Ed Requirements, Minimum 71 completed</li>
+					<ul>
+						<li>VLPA (20 Cr)</li>
+						<li>I&S (20 Cr)</li>
+						<li>NW (20 Cr)</li>
+						<li>Math (5 Cr) (MATH 112 OR MATH 124)</li>
+						<li>Additional Areas of Knowledge (6 Cr)</li>
+						<li>Electives (3 Cr)</li>
+						<li>Composition/Writing (10 Cr TOTAL)</li>
+						<li>Diversity (3 Cr)</li>
+					</ul>
+					<li>Minimum 2.80 college/university GPA</li>
+					<li>Department Application</li>
+					<li>Transcripts of all college-level work (Unofficial accepted)</li>
+					<li>Apply by first Monday of Spring quarter</li>
+  				</ul>
+  				<p>More information on <a href = "http://arch.be.uw.edu/admissions/"
+  				 target="_blank">arch.be.uw.edu/admissions/</a>
+  			</div>
 		</div>
 
 		<div id = "Education" class = "collegeAndMajorInfo">
@@ -301,6 +495,59 @@
 
 		<div id = "Engineering" class = "collegeAndMajorInfo">
 			<h1>College of Engineering</h1>
+			<!-- Aeronautics and Astronautics -->
+			<button class ="collapsible">Aeronautics and Astronautics <span class = "majorType">CC</span></button>
+  			<div class = "information">
+  				<p><strong>Applicant Admittance Types:</strong> <em>Engineering Undeclared Admissions, 
+				Current UW / Transfer Student Admissions</em>
+  				<p><strong>Engineering Undeclared Pre-Reqs:</strong>
+  				<ul>
+  					<li>Request major placement by deadlines: July 1 and January 15</li>
+  					<li>MATH Series</li>
+					<ul>
+						<li>MATH 124</li>
+						<li>MATH 125</li>
+						<li>MATH 126</li>
+					</ul>
+  					<li>PHYS 124</li>
+					<li>PHYS 125</li>
+					<li>PHYS 126 OR CHEM 142</li>
+  					<li>At least 5 English Composition Cr</li>
+  					<li>Minimum 2.0 GPA in all above courses</li>
+					<li>Minimum 2.5 cumulative GPA in placement courses</li>
+  				</ul>
+				<p><strong>Current UW / Transfer Student Pre-Reqs:</strong>
+  				<ul>
+  					<li>Fall Quarter Only - Apply by April 5th</li>
+  					<li>MATH Series</li>
+					<ul>
+						<li>MATH 124</li>
+						<li>MATH 125</li>
+						<li>MATH 126</li>
+					</ul>
+					<li>PHYS Series</li>
+					<ul>
+						<li>PHYS 121</li>
+						<li>PHYS 122</li>
+						<li>PHYS 123</li>
+					</ul>
+					<li>CHEM 142</li>
+					<li>A A 210</li>
+					<li>A A 260</li>
+					<li>MATH 307</li>
+					<li>MATH 308</li>
+					<li>MATH 324</li>
+					<li>CEE 220</li>
+					<li>ME 230</li>
+					<li>AMATH 301</li>
+  					<li>At least 5 English Composition Cr before application deadline</li>
+					<li>Minimum 60 credits completed by time of application</li>
+  					<li>Minimum 2.0 GPA in all above courses</li>
+					<li>Minimum 2.5 cumulative GPA in placement courses</li>
+  				</ul>
+  				<p>More information on <a href = "https://www.aa.washington.edu/admissions/undergrad/overview"
+  				 target="_blank">aa.washington.edu/admissions/undergrad/overview</a>
+  			</div>
 		</div>
 
 		<div id = "iSchool" class = "collegeAndMajorInfo">
@@ -310,6 +557,8 @@
   			<div class = "information">
   				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
   				Regular Admissions, Transfer Admissions</em>
+				<p><strong>Freshman Direct Admission Pre-Req:</strong> Indicate as first-choice major on UW 
+				Application
   				<p><strong>Regular Admission Pre-Reqs:</strong> Minimum 2.0 Cumulative College GPA
   				<ul>
   					<li>INFO 200</li>
@@ -329,6 +578,91 @@
 
 		<div id = "Business" class = "collegeAndMajorInfo">
 			<h1>Michael G. Foster School of Business</h1>
+		</div>
+		
+		<div id = "PublicHealth" class = "collegeAndMajorInfo">
+			<h1>School of Public Health</h1>
+			<!-- Public Health -->
+			<button class ="collapsible">Public Health - Global Health <span class = "majorType">CC</span></button>
+  			<div class = "information">
+				<p>Offers 5 degree options:
+				<ul>
+					<li>Public Health - Global Health (B.A)</li>
+					<li>Global Health (B.A)</li>
+					<li>Health Education and Promotion (B.A)</li>
+					<li>Public Health - Global Health (B.S)</li>
+					<li>Nutritional Sciences (B.S)</li>
+				</ul>
+  				<p><strong>Applicant Admittance Types:</strong> <em>Early Admissions, 
+				Upper-Division Admission Requirements</em>
+				<p>Both admittance types require completion of certain General Education requirements
+  				<p><strong>Early Admission Pre-Reqs:</strong>
+  				<ul>
+  					<li>Minimum 30 college credits</li>
+  					<li>Minimum 3.0 cumulative GPA</li>
+					<li>Minimum 2.0 in English composition (5 Cr)</li>
+					<li>Minimum 3.0 grade in one of the following intro public health courses: </li>
+					<ul>
+						<li>ENV H 111</li>
+						<li>ENV H 205</li>
+						<li>EPI 201</li>
+						<li>EPI 220</li>
+						<li>G H 101</li>
+						<li>HSERV 100 (Required for B.A Education and Promotion Degree Option)</li>
+						<li>NUTR 200 (Required for B.S Nutritional Sciences Degree Option)</li>
+						<li>PHG 200</li>
+					</ul>
+					<li>Minimum 3.0 grade in one of the following intro science courses: </li>
+					<ul>
+						<li>BIOL 118</li>
+						<li>BIOL 180</li>
+						<li>CHEM 120</li>
+						<li>CHEM 142</li>
+						<li>CHEM 145</li>
+						<li>MICROM 301 OR MICROM 302</li>
+					</ul>
+  				</ul>
+				<p><strong>Upper-Divison Admission Pre-Reqs:</strong>
+  				<ul>
+  					<li>Minimum 60 college credits</li>
+  					<li>Minimum 2.5 cumulative GPA</li>
+					<li>Minimum 2.0 in English composition (5 Cr)</li>
+					<li>Minimum 2.5 grade in one of the following intro public health courses: </li>
+					<ul>
+						<li>ENV H 111</li>
+						<li>ENV H 205</li>
+						<li>EPI 201</li>
+						<li>EPI 220</li>
+						<li>G H 101</li>
+						<li>HSERV 100 (Required for B.A Education and Promotion Degree Option)</li>
+						<li>NUTR 200 (Required for B.S Nutritional Sciences Degree Option)</li>
+						<li>PHG 200</li>
+						<li>One 5 Cr course from: Anthropology, Geography, Political Science, 
+						Psychology, or Sociology</li>
+					</ul>
+					<li>For B.A students, minimum 2.5 grade in one of the following intro science courses: </li>
+					<ul>
+						<li>BIOL 118</li>
+						<li>BIOL 180</li>
+						<li>CHEM 120</li>
+						<li>CHEM 142</li>
+						<li>CHEM 145</li>
+						<li>MICROM 301 OR MICROM 302</li>
+					</ul>
+					<li>For B.S students, minimum 2.5 grade in at least two courses of a year-long
+					intro science with labs or math</li>
+					<ul>
+						<li>BIOL Series (BIOL 180, 200, 200)</li>
+						<li>CHEM Series (CHEM 142, 152, 162)</li>
+						<li>OCHEM Series (CHEM 237, 238, 239 OR 241, 242)</li>
+						<li>PHYS Series (PHYS 114, 115, 116 OR 117, 118, 119)</li>
+						<li>PHYS Series (PHYS 121, 122, 123)</li>
+						<li>MATH Series (MATH 124, 125, 126)</li>
+					</ul>
+  				</ul>
+  				<p>More information on <a href = "https://sph.washington.edu/phgh/application/prerequisites"
+  				 target="_blank">sph.washington.edu/phgh/application/prerequisites</a>
+  			</div>
 		</div>
 
 		<!-- Copyright -->
