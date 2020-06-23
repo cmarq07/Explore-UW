@@ -21,6 +21,11 @@ a {
 	outline:none;
 }
 
+#campusMap {
+ height:400px;
+ width:100%
+}
+
 a:hover {
 	text-decoration:underline;
 }
@@ -137,6 +142,11 @@ margin-left: 10px;
 }
 
 #disclaimer {
+	transition: margin-left .5s;
+}
+
+#map {
+	margin-left: 65px;
 	transition: margin-left .5s;
 }
 
