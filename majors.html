@@ -27,6 +27,7 @@
 			<a href = "majors.html" title = "Majors">Majors</a>
 			<a href = "rso.html" title = "RSOs">RSOs</a>
 			<a href = "faq.html" title = "FAQ">FAQ</a>
+      <a href = "resources.html" title = "Resources">Resources</a>
 			<a href = "about.html" title = "About">About Us</a>
 		  </div>
 		  <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
@@ -43,6 +44,10 @@
 			<li><span class = "majorType">OM</span>: short for <em>"Open Major"</em>. The major will accept students at any time, provided
 			they have good academic standing.</li>
 		  </ul>
+      <p><strong>Words of encouragement:</strong> While some of these majors seem to have an insurmountable number of scary pre-reqs and impossible
+                                        to get into, we would like to point out that once you take these classes and you work for them, they won't look
+                                        scary anymore. But plan accordingly and realistically(e.g taking 18 credit of just STEM related courses for
+                                        Pre-Req in one quarter is a bad idea). Leave some rooms for other classes.
 		  <p><strong>Disclaimer:</strong> The information below are subject to change as departments make changes or new majors are added. We will update them as there are changes.
 		</div>
 
@@ -57,10 +62,10 @@
 			  <p><a href = "#PublicHealth">School of Public Health</a>
     	</div>
     </div>
-	
+
 	<div>
 		<h2 style = "margin-left: 65px">Search by Major</h2>
-		<input id = "majorSearch" type = "search" placeholder = "Enter a specific major name (e.g: Informatics)" 
+		<input id = "majorSearch" type = "search" placeholder = "Enter a specific major name (e.g: Informatics)"
 				maxlength = "40"></input>
     </div>
 
@@ -169,7 +174,24 @@
     				  <p>More information on <a href = "https://asian.washington.edu/admissions-incoming-freshmen-current-students"
     					 target="_blank">asian.washington.edu/admissions-incoming-freshmen-current-students</a></li>
     				</div>
-
+        <!-- English -->
+        <button class ="collapsible">English: Language and Literature <span class = "majorType">OM</span></button>
+          <div class = "information">
+            <p><strong>Pre-Req:</strong> UW students who are currently enrolled can declare English major at any time.
+            <p><strong>Additional requirements:</strong>  Overall UW GPA of at least 2.00. English GPA of at least 2.50.
+            <P><strong>Note:</strong> If you are interested in Creative Writing, please look at <strong>English: Creative Writing</strong>.
+            <p>More information on <a href = "https://english.washington.edu/english-language-and-literature-option"
+               target="_blank">english.washington.edu/english-language-and-literature-option</a></li>
+         </div>
+        <!-- Creative Writing -->
+        <button class ="collapsible">English: Creative Writing <span class = "majorType">CC</span></button>
+          <div class = "information">
+            <p><strong>Pre-Req:</strong> Already in the English major program or ready to declare. Completion of ENGL 283 and ENGL 284.
+            <p><strong>Additional requirements:</strong> Transcripts and Writing Sample of 3-5 poems and 5-10 pages of fiction(preferably a complete story).
+            <p><strong>Admission Period:</strong> 4pm on the third Friday of autumn, winter or spring quarter.
+            <p>More information on <a href = "https://english.washington.edu/english-creative-writing-option"
+             target="_blank">english.washington.edu/english-creative-writing-option</a></li>
+          </div>
 			<!-- Natural Sciences -->
 				<h2>Natural Sciences</h2>
 				<!-- ACMS -->
@@ -194,17 +216,27 @@
             <p>More information on <a href = "https://acms.washington.edu/applying"
                target="_blank">acms.washington.edu/applying</a></li>
           </div>
-		  <!-- Chemistry -->
+        <!-- Applied Math -->
+        <button class ="collapsible">Applied Mathematics <span class = "majorType">CC</span></button>
+          <div class = "information">
+            <p><strong>Pre-Req:</strong> Min of 2.0 in each MATH 124, 125, 126 and AMATH 301.
+                               MATH 12X series can be subsituted with Math 134, 135, 136.
+            <p><strong>Other Requirements:</strong> Personal Statement.
+            <p><strong>Admission Period:</strong> 5pm on the second Friday of Autumn Quarter and the second Friday of Spring Quarter.
+            <p>More information on <a href = "https://amath.washington.edu/undergraduate-admissions"
+    					 target="_blank">amath.washington.edu/undergraduate-admissions</a></li>
+          </div>
+        <!-- Chemistry -->
         <button class ="collapsible">Chemistry <span class = "majorType">CC</span></button>
           <div class = "information">
-			<p>Chemistry offers 3 (4 including the minor) 
-			degree options with a variance in degree requirements for each:
-			<ul>
-				<li>B.A</li>
-				<li>B.S</li>
-				<li>ACS Certified (B.S)</li>
-			</ul>
-			<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
+			      <p>Chemistry offers 3 (4 including the minor)
+			         degree options with a variance in degree requirements for each:
+      			<ul>
+      				<li>B.A</li>
+      				<li>B.S</li>
+      				<li>ACS Certified (B.S)</li>
+      			</ul>
+			      <p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
 					     Research/Honors, Early Admissions, Regular Admissions</em>
             <p><strong>Freshman Direct Admission Pre-Reqs:</strong>
   					<ul>
@@ -378,9 +410,36 @@
           </div>
       <!-- Social Sciences -->
 				<h2>Social Sciences</h2>
-				<!-- Geography -->
+        <!-- Economics -->
+        <button class ="collapsible">Economics <span class = "majorType">CC</span></button>
+  			    <div class = "information">
+    			   <p><strong>Pre-Req:</strong> UW student with 45 credits completed(Sophomore).
+             <ul>
+               <li><strong>Bachelor of Arts:</strong> ECON 200, 201, STAT 311. One of MATH 124, MATH 134 or MATH 145.
+                                            One English Composition(C) courses. Completion of RTW assessment</li>
+               <ul>
+                 <li>Min of 2.5 Pre-Req and cumulative GPA with no less than 2.0 GPA in the courses above. Only one repeat for each pre-req courses.</li>
+                 <li>Substitute for STAT 311: Q SCI 381, STAT 340, STAT 341, STAT 390, IND E 315(for students in College of Engineering)
+                      PSYCH 317 and 318(both completed for students pursuing Psychology).</li>
+                 <li>More information on <a href = "https://econ.washington.edu/bachelor-arts"
+                       target="_blank">econ.washington.edu/bachelor-arts</a></li>
+               </ul>
+               <li><strong>Bachelor of Science:</strong> ECON 200, 201, STAT 311. Math 124, 125, 126 (or Math 134, 135, 136).
+                           One English Composition(C) courses. Completion of RTW assessment</li>
+               <ul>
+                 <li>Min of 2.5 Pre-Req and cumulative GPA with no less than 2.0 GPA in the courses above. Only one repeat for each pre-req courses.</li>
+                 <li>Substitute for STAT 311: Q SCI 381, STAT 340, STAT 341, STAT 390, IND E 315(for students in College of Engineering)
+                      PSYCH 317 and 318(both completed for students pursuing Psychology).</li>
+                 <li>More information on <a href = "https://econ.washington.edu/bachelor-science"
+                         target="_blank">econ.washington.edu/bachelor-science</a></li>
+               </ul>
+             </ul>
+             <p><strong>"BA or BS that is the question"</strong> information on <a href = "https://econ.washington.edu/choosing-your-economics-degree"
+                     target="_blank">econ.washington.edu/choosing-your-economics-degree</a></li>
+  			    </div>
+        <!-- Geography -->
 				<button class ="collapsible">Geography <span class = "majorType">OM</span></button>
-  				<div class = "information">
+  			 <div class = "information">
   					<p><strong>Pre-Req:</strong> Minimum 2.0 Cumulative College GPA to declare major
   					<p>More information on <a href = "https://geography.washington.edu/undergraduate-programs"
   					 target="_blank">geography.washington.edu/undergraduate-programs</a></li>
@@ -390,12 +449,19 @@
   				<div class = "information">
   					<p><strong>Pre-Req:</strong> Minimum 2.0 Cumulative College GPA to declare major
   					<p>More information on <a href = "https://gwss.washington.edu/gwss-major"
-  					 target="_blank">gwss.washington.edu/gwss-major</a></li>
+  					 target="_blank">gwss.washington.edu/gwss-major</a>
   				</div>
-				<!-- Sociology -->
+        <!-- Philosophy -->
+        <button class="collapsible">Philosophy <span class = "majorType">OM</span></button>
+          <div class = "information">
+            <p><strong>Pre-Req:</strong> 10 credits of Philosophy with 2.00 cumulative GPA
+            <p>More information on <a href = "https://phil.washington.edu/philosophy-major"
+    					 target="_blank">phil.washington.edu/philosophy-major</a>
+          </div>
+        <!-- Political Science -->
 				<button class ="collapsible">Political Science <span class = "majorType">MR</span></button>
   				<div class = "information">
-  					<p><strong>Pre-Reqs:</strong> 
+  					<p><strong>Pre-Reqs:</strong>
 					<ul>
 						<li>15 Intro PolySci Cr</li>
 						<ul>
@@ -415,7 +481,7 @@
 				<!-- Sociology -->
 				<button class ="collapsible">Sociology <span class = "majorType">MR</span></button>
   				<div class = "information">
-  					<p><strong>Pre-Reqs:</strong> 
+  					<p><strong>Pre-Reqs:</strong>
 					<ul>
 						<li>10 Intro Sociology Cr</li>
 						<ul>
@@ -436,7 +502,7 @@
   			<div class = "information">
   				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
   				Sophomore Admissions, Transfer Admissions, Upper-Division Admission Requirements</em>
-				<p><strong>Freshman Direct Admission Pre-Req:</strong> Indicate as first-choice major on UW 
+				<p><strong>Freshman Direct Admission Pre-Req:</strong> Indicate as first-choice major on UW
 				Application
   				<p><strong>Sophomore Admission Pre-Reqs:</strong>
   				<ul>
@@ -454,7 +520,7 @@
 					Upper-Division Admission Requirements as well as all major requirements</li>
 					<li>Junior-year transfer students must complete all requirements listed as
 					Upper-Division Admission Requirements as well as all major requirements, and
-					it is highly encouraged to complete all preparatory architecture coursework 
+					it is highly encouraged to complete all preparatory architecture coursework
 					before entry.</li>
   				</ul>
 				<p><strong>Upper-Divison Admission Pre-Reqs:</strong>
@@ -498,7 +564,7 @@
 			<!-- Aeronautics and Astronautics -->
 			<button class ="collapsible">Aeronautics and Astronautics <span class = "majorType">CC</span></button>
   			<div class = "information">
-  				<p><strong>Applicant Admittance Types:</strong> <em>Engineering Undeclared Admissions, 
+  				<p><strong>Applicant Admittance Types:</strong> <em>Engineering Undeclared Admissions,
 				Current UW / Transfer Student Admissions</em>
   				<p><strong>Engineering Undeclared Pre-Reqs:</strong>
   				<ul>
@@ -557,7 +623,7 @@
   			<div class = "information">
   				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
   				Regular Admissions, Transfer Admissions</em>
-				<p><strong>Freshman Direct Admission Pre-Req:</strong> Indicate as first-choice major on UW 
+				<p><strong>Freshman Direct Admission Pre-Req:</strong> Indicate as first-choice major on UW
 				Application
   				<p><strong>Regular Admission Pre-Reqs:</strong> Minimum 2.0 Cumulative College GPA
   				<ul>
@@ -579,7 +645,7 @@
 		<div id = "Business" class = "collegeAndMajorInfo">
 			<h1>Michael G. Foster School of Business</h1>
 		</div>
-		
+
 		<div id = "PublicHealth" class = "collegeAndMajorInfo">
 			<h1>School of Public Health</h1>
 			<!-- Public Health -->
@@ -593,7 +659,7 @@
 					<li>Public Health - Global Health (B.S)</li>
 					<li>Nutritional Sciences (B.S)</li>
 				</ul>
-  				<p><strong>Applicant Admittance Types:</strong> <em>Early Admissions, 
+  				<p><strong>Applicant Admittance Types:</strong> <em>Early Admissions,
 				Upper-Division Admission Requirements</em>
 				<p>Both admittance types require completion of certain General Education requirements
   				<p><strong>Early Admission Pre-Reqs:</strong>
@@ -637,7 +703,7 @@
 						<li>HSERV 100 (Required for B.A Education and Promotion Degree Option)</li>
 						<li>NUTR 200 (Required for B.S Nutritional Sciences Degree Option)</li>
 						<li>PHG 200</li>
-						<li>One 5 Cr course from: Anthropology, Geography, Political Science, 
+						<li>One 5 Cr course from: Anthropology, Geography, Political Science,
 						Psychology, or Sociology</li>
 					</ul>
 					<li>For B.A students, minimum 2.5 grade in one of the following intro science courses: </li>
