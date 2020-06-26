@@ -33,11 +33,11 @@
     <div class= "groups" style= "display: none;">
       <div id = "intro" class ="content">
         <h1>Campus Map</h1>
-        <p>UW campus is huge. It is important to know how far away your next lecture is. The lectures are usually <strong>10 min</strong> apart. You should also consider
+        <p>UW campus is huge. It is important to know how far away your next lecture is. The lectures are usually <strong>10 min</strong> apart if taken consecutively. You should also consider
            the foot traffic as there are other students going to their classes, which will slow you down.
         <p>Type in the buildings and press the 'Get Time' button which will redirect you to
            Google Maps of buildings of your choices to show you the time and directions.
-        <p><strong>Note:</strong> Add "hall" or corresponding building type next to the building name to increase accuracy (e.g Willow Hall, Savery Hall, Odegaard Library).
+        <p><strong>Note:</strong> Add "hall" or corresponding building type next to the building name to increase precision. (e.g Willow Hall, Savery Hall, Odegaard Library)
       </div>
 
       <div id = "map">
@@ -47,11 +47,17 @@
           <button onClick="addStateName()" type="submit">Get Time</button>
         </form>
       </div>
+
+      <div id= "campusMap">
+        <img src="WashingtonCampusMap.png" alt="UW Campus Map" width="1000" height="600">
+      </div>
     </div>
-		<!-- Copyright -->
+
+    <!-- Copyright -->
 		<div id = "copyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
 		</div>
+
 		<script>
       function openNav() {
 			document.getElementById("sideMenu").style.width = "200px";
