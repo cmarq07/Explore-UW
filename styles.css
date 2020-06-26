@@ -22,8 +22,9 @@ a {
 }
 
 #campusMap {
- height:400px;
- width:100%
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 a:hover {
@@ -146,7 +147,7 @@ margin-left: 10px;
 }
 
 #map {
-	margin-left: 65px;
+	margin:30px 5vw 40px 5vw;
 	transition: margin-left .5s;
 }
 
