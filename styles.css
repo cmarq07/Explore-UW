@@ -73,6 +73,14 @@
 	cursor:pointer;
 }
 
+.sidenav a:visited {
+  color:white;
+}
+
+.sidenav a:visited:hover {
+  color:#b7a57a;
+}
+
 .sidenav .closebtn {
   position: absolute;
   top: 0;
