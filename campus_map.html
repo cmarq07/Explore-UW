@@ -33,24 +33,30 @@
     <div class= "groups" style= "display: none;">
       <div id = "intro" class ="content">
         <h1>Campus Map</h1>
-        <p>UW campus is huge. It is important to know how far away your next lecture is. The lectures are usually <strong>10 min</strong> apart if taken consecutively. You should also consider
+        <p>The UW campus is huge. It is important to know how far away your next lecture is. The lectures are usually <strong>10 min</strong> apart if taken consecutively. You should also consider
            the foot traffic as there are other students going to their classes, which will slow you down.
         <p>Type in the buildings and press the 'Get Time' button which will redirect you to
            Google Maps of buildings of your choices to show you the time and directions.
         <p><strong>Note:</strong> Add "hall" or corresponding building type next to the building name to increase precision. (e.g Husky Union Building, Savery Hall, Odegaard Library)
       </div>
+	  
+	  <div id = "mapContainer">
+		  <div id = "map">
+			<form action="https://www.google.com/maps" method="get" target="_blank">
+			  <h2>Depart</h2> <input id="departure" class = "field" type="text" name="saddr">
+			  <h2>Destination</h2> <input id="destination" class = "field" type="text" name="daddr">
+			  <br>
+			  <br>
+			  <button class = "button" onClick="addStateName()" type="submit">Get Time</button>
+			</form>
+			<br>
+			<button class = "button">Zoom</button>
+		  </div>
 
-      <div id = "map">
-        <form action="https://www.google.com/maps" method="get" target="_blank">
-          Depart: <input id="departure" type="text" name="saddr">
-          Destination: <input id="destination" type="text" name="daddr">
-          <button onClick="addStateName()" type="submit">Get Time</button>
-        </form>
-      </div>
-
-      <div id= "campusMap">
-        <img src="WashingtonCampusMap.png" width="1000" height="600"/>
-      </div>
+		  <div id= "campusMap">
+			<img src="WashingtonCampusMap.png" width="600" height="600"/>
+		  </div>
+	  </div>
     </div>
 
     <!-- Copyright -->

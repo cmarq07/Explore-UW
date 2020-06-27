@@ -1,93 +1,50 @@
-body {
-	background-color:#e6e6e6;
-	margin:0;
-	font-family:"Open Sans", Helvetica, Arial, Verdana, sans-serif;
-}
-
-a {
-	color:#4b2e83;
+/* Page Headers and Footer */
+#title {
+	color:#b7a57a;
+	font-size:3em;
+	font-weight:bold;
+	display:inline-block;
+	text-shadow:3px 3px #847348;
+	transition: margin-left .5s;
 	text-decoration:none;
+	text-align:center;
+	user-drag: none;
+	user-select: none;
+	-moz-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	cursor:pointer;
 }
 
-#majorSearch {
-	background-color:white;
-	height:30px;
-	width:25%;
-	margin:0 5vw 40px 5vw;
-	border:2px solid rgba(217, 217, 217, 1);
-	border-radius:10px;
-	padding-left:10px;
-	padding-right:10px;
-	outline:none;
+#copyright {
+		position:fixed;
+		background-color:#36215e;
+		width:100%;
+		padding:10px 0 10px 0;
+		font-size:20px;
+		color:white;
+		text-align:center;
+		bottom:0;
 }
 
-#campusMap {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
+#scrollCopyright {
+		background-color:#36215e;
+		width:100%;
+		padding:10px 0 10px 0;
+		font-size:20px;
+		color:white;
+		text-align:center;
+		bottom:0;
 }
 
-a:hover {
-	text-decoration:underline;
+.navContainer {
+	height:60px;
+	background-color:#4b2e83;
 }
 
-a:visited {
-	color:#9c37d2;
-}
 
-h1 {
-	color:#4b2e83;
-}
-
-h2, h3 {
-	color:#201439;
-}
-
-.groups {
-transition: margin-left .5s;
-margin-left: 10px;
-}
-
-.majorType {
-	color:#cf9f30;
-	text-shadow:1.2px 1.2px #847348;
-	font-size:18px;
-	font-weight:bold;
-}
-
-.collapsible {
-	background-color: white;
-	color: black;
-	cursor: pointer;
-	padding: 20px;
-	width: 100%;
-	text-align: left;
-	font-size:16px;
-	font-weight:bold;
-	border:2px solid rgba(217, 217, 217, 1);
-	border-radius:10px;
-}
-
-.collapsible:after {
-	content: '\002B';
-	color: black;
-	font-weight: bold;
-	float: right;
-	margin-left: 5px;
-}
-
-.information {
-	padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #DBDBDB;
-}
-
-.active:after {
-	content: "\2212";
-}
-
+/* Side Navigation */
 .sidenav {
   height:100%;
   width:0;
@@ -124,26 +81,110 @@ margin-left: 10px;
   margin-left: 50px;
 }
 
-#title {
-	color:#b7a57a;
-	font-size:3em;
-	font-weight:bold;
-	display:inline-block;
-	text-shadow:3px 3px #847348;
-	transition: margin-left .5s;
-	text-decoration:none;
-	text-align:center;
-	user-drag: none;
-	user-select: none;
-	-moz-user-select: none;
-	-webkit-user-drag: none;
-	-webkit-user-select: none;
-	-ms-user-select: none;
-	cursor:pointer;
+
+/* General Page Content */
+body {
+	background-color:#e6e6e6;
+	margin:0;
+	font-family:"Open Sans", Helvetica, Arial, Verdana, sans-serif;
 }
 
-#disclaimer {
+.button {
+	font-size:18px;
+	font-weight:bold;
+	color:#201439;
+	background-color:white;
+	border-radius:100px;
+	border-color:rgba(255, 255, 255, 1);
+}
+
+.button:hover {
+	color:#4b2e83;
+}
+
+.field {
+	background-color:white;
+	font-weight:bold;
+	height:30px;
+	border:2px solid rgba(217, 217, 217, 1);
+	border-radius:10px;
+	padding-left:10px;
+	padding-right:10px;
+	outline:none;
+}
+
+.collapsible {
+	background-color: white;
+	color: black;
+	cursor: pointer;
+	padding: 20px;
+	width: 100%;
+	text-align: left;
+	font-size:16px;
+	font-weight:bold;
+	border:2px solid rgba(217, 217, 217, 1);
+	border-radius:10px;
+}
+
+.collapsible:after {
+	content: '\002B';
+	color: black;
+	font-weight: bold;
+	float: right;
+	margin-left: 5px;
+}
+
+.content {
+	background-color:white;
+	margin:30px 5vw 40px 5vw;
+	border:2px solid rgba(217, 217, 217, 1);
+	border-radius:10px;
+	padding-left:10px;
+	padding-right:10px;
 	transition: margin-left .5s;
+}
+
+.unselectable {
+		user-drag: none;
+		user-select: none;
+		-moz-user-select: none;
+		-webkit-user-drag: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+		pointer-events: none;
+}
+
+
+/* Text Styles */
+a {
+	color:#4b2e83;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#9c37d2;
+}
+
+h1 {
+	color:#4b2e83;
+}
+
+h2, h3 {
+	color:#201439;
+}
+
+
+/* Campus Map CSS */
+#mapContainer {
+	display:inline-block;
+}
+
+#campusMap {
+	
 }
 
 #map {
@@ -151,25 +192,10 @@ margin-left: 10px;
 	transition: margin-left .5s;
 }
 
-#copyright {
-		position:fixed;
-		background-color:#36215e;
-		width:100%;
-		padding:10px 0 10px 0;
-		font-size:20px;
-		color:white;
-		text-align:center;
-		bottom:0;
-}
 
-#scrollCopyright {
-		background-color:#36215e;
-		width:100%;
-		padding:10px 0 10px 0;
-		font-size:20px;
-		color:white;
-		text-align:center;
-		bottom:0;
+/* Majors CSS */
+#disclaimer {
+	transition: margin-left .5s;
 }
 
 #topBtn {
@@ -188,27 +214,38 @@ margin-left: 10px;
 	border: none;
 }
 
-.content {
+#majorSearch {
 	background-color:white;
-	margin:30px 5vw 40px 5vw;
+	height:30px;
+	width:25%;
+	margin:0 5vw 40px 5vw;
 	border:2px solid rgba(217, 217, 217, 1);
 	border-radius:10px;
 	padding-left:10px;
 	padding-right:10px;
-	transition: margin-left .5s;
+	outline:none;
 }
 
-.navContainer {
-	height:60px;
-	background-color:#4b2e83;
+.groups {
+transition: margin-left .5s;
+margin-left: 10px;
 }
 
-.unselectable {
-		user-drag: none;
-		user-select: none;
-		-moz-user-select: none;
-		-webkit-user-drag: none;
-		-webkit-user-select: none;
-		-ms-user-select: none;
-		pointer-events: none;
+.majorType {
+	color:#cf9f30;
+	text-shadow:1.2px 1.2px #847348;
+	font-size:18px;
+	font-weight:bold;
+}
+
+.information {
+	padding: 0 18px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	background-color: #DBDBDB;
+}
+
+.active:after {
+	content: "\2212";
 }
