@@ -5,7 +5,7 @@
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
-		<link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="testStyles.css">
     </head>
 
     <body>
@@ -39,8 +39,9 @@
            Google Maps of buildings of your choices to show you the time and directions.
         <p><strong>Note:</strong> Add "hall" or corresponding building type next to the building name to increase precision. (e.g Husky Union Building, Savery Hall, Odegaard Library)
       </div>
-	  
-	  <div id = "mapContainer">
+    </div>
+
+	  <div class = "mapContainer">
 		  <div id = "map">
 			<form action="https://www.google.com/maps" method="get" target="_blank">
 			  <h2>Depart</h2> <input id="departure" class = "field" type="text" name="saddr">
@@ -49,15 +50,13 @@
 			  <br>
 			  <button class = "button" onClick="addStateName()" type="submit">Get Time</button>
 			</form>
-			<br>
-			<button class = "button">Zoom</button>
 		  </div>
 
-		  <div id= "campusMap">
-			<img src="WashingtonCampusMap.png" width="600" height="600"/>
-		  </div>
+      <div class="img-zoom-container">
+        <img id="myimage" src="WashingtonCampusMap.png" width="1000" height="600">
+        <div id="myresult" class="img-zoom-result"></div>
+      </div>
 	  </div>
-    </div>
 
     <!-- Copyright -->
 		<div id = "scrollCopyright">
@@ -89,6 +88,51 @@
         depart.value = depart.value + " Seattle, Washington";
         destination.value = destination.value +" Seattle, Washington";
       }
+
+      function imageZoom(imgID, resultID) {
+        var img, lens, result, cx, cy;
+        img = document.getElementById(imgID);
+        result = document.getElementById(resultID);
+        lens = document.createElement("DIV");
+        lens.setAttribute("class", "img-zoom-lens");
+        img.parentElement.insertBefore(lens, img);
+        cx = result.offsetWidth / lens.offsetWidth;
+        cy = result.offsetHeight / lens.offsetHeight;
+        result.style.backgroundImage = "url('" + img.src + "')";
+        result.style.backgroundSize = (img.width * cx) + "px " + (img.height * cy) + "px";
+        lens.addEventListener("mousemove", moveLens);
+        img.addEventListener("mousemove", moveLens);
+        lens.addEventListener("touchmove", moveLens);
+        img.addEventListener("touchmove", moveLens);
+        function moveLens(e) {
+          var pos, x, y;
+          e.preventDefault();
+          pos = getCursorPos(e);
+          x = pos.x - (lens.offsetWidth / 2);
+          y = pos.y - (lens.offsetHeight / 2);
+          if (x > img.width - lens.offsetWidth) {x = img.width - lens.offsetWidth;}
+          if (x < 0) {x = 0;}
+          if (y > img.height - lens.offsetHeight) {y = img.height - lens.offsetHeight;}
+          if (y < 0) {y = 0;}
+          lens.style.left = x + "px";
+          lens.style.top = y + "px";
+          result.style.backgroundPosition = "-" + (x * cx) + "px -" + (y * cy) + "px";
+        }
+        function getCursorPos(e) {
+          var a, x = 0, y = 0;
+          e = e || window.event;
+          a = img.getBoundingClientRect();
+          x = e.pageX - a.left;
+          y = e.pageY - a.top;
+          x = x - window.pageXOffset;
+          y = y - window.pageYOffset;
+          return {x : x, y : y};
+        }
+      }
+      </script>
+
+      <script>
+        imageZoom("myimage", "myresult");
       </script>
     </body>
 </html>
