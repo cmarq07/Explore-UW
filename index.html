@@ -2,6 +2,7 @@
 <html>
     <head>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="logo.png"/>
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
@@ -32,22 +33,26 @@
     <!-- Body -->
 		<div id = "intro" class = "content" style= "display: none;">
       <h1>Hello There!</h1>
-			<p>Explore UW is a website created to help current and prospective UW students to get to explore University of Washington.
+			<p>Explore UW is a website created to help current and prospective UW students to explore University of Washington.
         We offer a couple of different services that we, as UW students, felt that it would have been helpful when we were first years.
+        We are working to add more features that can improve student life and allow students to have better experience at UW. If you have any questions or
+        feedbacks, please email one of the developers on <a href="about.html"><b>About Us</b></a> page.
       <ul>
         <li><b>Campus Map</b>: Get an overview of the campus and use the Distance Time Calculator to
-		navigate between your classes and get acquaintanced with UW's many buildings.</li>
+		     navigate between your classes and get acquaintanced with UW's many buildings.</li>
         <li><b>Major Info</b>: an overview of the UW major system and summary of the admission requirement for each majors, so that you can plan ahead.</li>
         <li><b>FAQ</b>: frequently asked questions (FAQ) about UW, which are from student sources like the r/udub Reddit and from students themselves.</li>
       </ul>
-        We are working to add more features that can improve student life and allow students to have better experience at UW. If you have any questions or
-        feedbacks, please email one of the developers on <a href="about.html"><b>About Us</b></a> page.<br />
-        <br />
 		</div>
 		<div id= "disclaimer" class = "content" style= "display: none;">
 			<p>Explore UW is created by UW students; for UW students.
 			This website is run by students, not the University of Washington.
 		</div>
+    <center>
+      <div class = "logo" style= "display: none;">
+        <img src="logo.png" width="400" height="400">
+      </div>
+    </center>
 
 		<!-- Copyright -->
 		<div id = "copyright">
@@ -71,6 +76,7 @@
 
       $(document).ready(function() {
         $("div.content").fadeIn(1400);
+        $("div.logo").fadeIn(1400);
       });
       </script>
     </body>
