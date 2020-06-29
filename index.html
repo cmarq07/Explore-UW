@@ -31,29 +31,31 @@
       <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
 
     <!-- Body -->
-		<div id = "intro" class = "content" style= "display: none;">
+
+    <center>
+      <div class = "logo" style= "display: none;">
+        <img src="logo.png" width="340" height="340">
+      </div>
+    </center>
+    <div id = "intro" class = "content" style= "display: none;">
       <h1>Hello There!</h1>
 			<p>Explore UW is a website created to help current and prospective UW students to explore University of Washington.
         We offer a couple of different services that we, as UW students, felt that it would have been helpful when we were first years.
         We are working to add more features that can improve student life and allow students to have better experience at UW. If you have any questions or
         feedbacks, please email one of the developers on <a href="about.html"><b>About Us</b></a> page.
-      <ul>
-        <li><b>Campus Map</b>: Get an overview of the campus and use the Distance Time Calculator to
-		     navigate between your classes and get acquaintanced with UW's many buildings.</li>
-        <li><b>Major Info</b>: an overview of the UW major system and summary of the admission requirement for each majors, so that you can plan ahead.</li>
-        <li><b>FAQ</b>: frequently asked questions (FAQ) about UW, which are from student sources like the r/udub Reddit and from students themselves.</li>
-      </ul>
+      <p>You can click on the "Features" button(top left) to check out what we have!
 		</div>
-		<div id= "disclaimer" class = "content" style= "display: none;">
+
+    <div id= "news"class= "content" style= "display:none;">
+      <h1>UPDATE ON UW REGARDING COVID-19</h1>
+      <p>According to Ana Mari Cauce, the president of UW, "Classes will begin as scheduled on Sept. 30, in a <strong>hybrid</strong> approach.....Large classes — including all courses of 50 students or more — will be taught remotely."
+      <p>You can check if your courses will be online on <a href = "https://www.washington.edu/students/timeschd/AUT2020/">washington.edu/students/timeschd/AUT2020/</a>.
+    </div>
+
+    <div id= "disclaimer" class = "content" style= "display: none;">
 			<p>Explore UW is created by UW students; for UW students.
 			This website is run by students, not the University of Washington.
 		</div>
-    <center>
-      <div class = "logo" style= "display: none;">
-        <img src="logo.png" width="400" height="400">
-      </div>
-    </center>
-
 		<!-- Copyright -->
 		<div id = "copyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
@@ -65,6 +67,7 @@
 			document.getElementById("intro").style.marginLeft = "210px";
 			document.getElementById("title").style.marginLeft = "210px";
 			document.getElementById("disclaimer").style.marginLeft = "210px";
+      document.getElementById("news").style.marginLeft = "210px";
 		  }
 
 		  function closeNav() {
@@ -72,6 +75,7 @@
 			document.getElementById("intro").style.marginLeft= "65px";
 			document.getElementById("title").style.marginLeft = "0";
 			document.getElementById("disclaimer").style.marginLeft = "65px";
+      document.getElementById("news").style.marginLeft = "65px";
       }
 
       $(document).ready(function() {
