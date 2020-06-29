@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="logo.png"/>
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
@@ -34,7 +35,7 @@
 
 		<!-- Body -->
 		<div id = "intro" class = "content" style= "display: none;">
-		  <p>There are many majors for undergraduates at UW to explore! We have gathered some of the most popular majors at UW for you to consider.
+		  <p>There are many majors for undergraduates at UW to explore! We have gathered some of the most popular majors for now at UW for you to consider(we will add more majors as we go).
 		  <p><strong>Major Type Key:</strong>
 		  <ul>
 			<li><span class = "majorType">CC</span>: short for <em>"Capacity Constrained"</em>. Completing Pre-Requisites <span style = "text-decoration:underline">will not</span> guarantee admission
@@ -65,17 +66,61 @@
     </div>
 
 	<div>
-		<h2 style = "margin-left: 65px">Search by Major</h2>
-		<input id = "majorSearch" type = "search" placeholder = "Enter a specific major name (e.g: Informatics)"
-				maxlength = "40"></input>
+    <div id ="searchMajorInfo" class = "groups" style="display:none;">
+      <h2 style = "margin-left: 65px">Search by Major</h2>
+      <div class ="content">
+        <p>As previously mentioned, there are a lot of majors at UW. To easily look at the majors, click on the "Search for Major" button.
+           Then type in the major you have in mind and click. Click the button again to close the search bar.
+        <div class="dropdown">
+          <button onclick="searchBar()" class="dropbtn">Search for major</button>
+          <div id="majorShortCut" class="dropdown-content">
+            <input type="text" placeholder="Enter a specific major name (e.g: Cinema and Media Studies).." maxlength = "40" id="majorInput" onkeyup="filterSearch()">
+            <a href="#Art">Art</a>
+            <a href="#ArtH">Art History</a>
+            <a href="#composition">Composition (Music)</a>
+            <a href="#dance">Dance</a>
+            <a href="#design">Design</a>
+            <a href="#drama">Drama</a>
+            <a href="#cms">Cinema and Media Studies</a>
+            <a href="#asianLang">Chinese</a>
+            <a href="#asianLang">Japanese</a>
+            <a href="#asianLang">Korean</a>
+            <a href="#asianLang">South Asian Languages(Hindi or Sanskrit)</a>
+            <a href="#engl">English: Language and Literature</a>
+            <a href="#englCreative">English: Creative Writing</a>
+            <a href="#acms">Applied and Computational Mathematical Science(ACMS)</a>
+            <a href="#aMath">Applied Mathematics</a>
+            <a href="#bioChem">Biochemistry</a>
+            <a href="#chem">Chemistry</a>
+            <a href="#cs">Computer Science</a>
+            <a href="#phys">Physics</a>
+            <a href="#psych">Psychology</a>
+            <a href="#stat">Statistics</a>
+            <a href="#com">Communication</a>
+            <a href="#econ">Economics</a>
+            <a href="#geography">Geography</a>
+            <a href="#gwss">Gender, Women, and Sexuality Studies</a>
+            <a href="#phil">Philosophy</a>
+            <a href="#polS">Political Science</a>
+            <a href="#soc">Sociology</a>
+            <a href="#arch">Architecture</a>
+            <a href="#educECO">Education, Communities and Organizations</a>
+            <a href="#educECFS">Early Childhood & Family Studies</a>
+            <a href="#engrAA">Aeronautics and Astronautics</a>
+            <a href="#info">Informatics</a>
+            <a href="#business">Business Administration</a>
+            <a href="#nurs">Nursing</a>
+          </div>
+        </div>
+      </div>
     </div>
-
+  </div>
 		<div id = "ArtsAndSciences" class = "collegeAndMajorInfo">
 			<h1>College of Arts and Sciences</h1>
 			<!-- Arts -->
 				<h2>Arts</h2>
 				<!-- Art -->
-				<button class ="collapsible">Art <span class = "majorType">MR</span></button>
+				<button id= "art" class ="collapsible">Art <span class = "majorType">MR</span></button>
 				    <div class = "information">
 					<p><strong>Pre-Req:</strong> 5CR from ART 100~200 level.
 					<p>If you want to declare Art as your major, it is encouraged for you to declare it early in your academic career.
@@ -90,7 +135,7 @@
 					 target="_blank">art.washington.edu/art/undergraduate-program</a></li>
 				</div>
 				<!-- Art History -->
-				<button class ="collapsible">Art History <span class = "majorType">MR</span></button>
+				<button id= "artH" class ="collapsible">Art History <span class = "majorType">MR</span></button>
 				    <div class = "information">
 				  <p><strong>Pre-Req:</strong> No Pre-Req. Appointment with advisor</p>
 				  <p>If you want to declare Art History as your major, it is encouraged for you to declare it early in your academic career.</p>
@@ -98,7 +143,7 @@
 					 target="_blank">art.washington.edu/art-history/admission-major-art-history</a></li>
 				</div>
 				<!-- Music Composition -->
-				<button class ="collapsible">Composition (Music) <span class = "majorType">CC</span></button>
+				<button id= "composition" class ="collapsible">Composition (Music) <span class = "majorType">CC</span></button>
   				<div class = "information">
   				<p><strong>Pre-Req:</strong> MUSIC 113/119, 120, 202/205, 216, 217 and 218</p>
   				<p><strong>Additional requirements:</strong> Portfolio of recent work and Audition if the committee asks you.</p>
@@ -110,7 +155,7 @@
   				   target="_blank">music.washington.edu/undergraduate-graduate-auditions</a></li>
 				</div>
 				<!-- Dance -->
-				<button class ="collapsible">Dance <span class = "majorType">MR</span></button>
+				<button id= "dance" class ="collapsible">Dance <span class = "majorType">MR</span></button>
   				<div class = "information">
   				  <p><strong>Pre-Req:</strong> 5 credit from DANCE 166 (5), 242 (3), 250 (5), 251 (5), 271 (1) or 493 (5).
   					 Min 2.0 GPA. Registered in or successfully completed at least one technique course.</p>
@@ -120,7 +165,7 @@
   					 target="_blank">dance.washington.edu/ba-dance</a></li>
 				</div>
         <!-- Design -->
-        <button class ="collapsible">Design <span class = "majorType">CC</span></button>
+        <button id= "design"  class ="collapsible">Design <span class = "majorType">CC</span></button>
           <div class = "information">
           	<p><strong>Pre-Req:</strong> DESIGN 166, offered Winter and Spring
           	<p><strong>Note:</strong> If your GPA for DESIGN 166 is higher than 3.7, automatically accepted into BDes program for autumn quarter.
@@ -135,7 +180,7 @@
           	 target="_blank">art.washington.edu/design/bachelor-design-admissions</a></li>
           </div>
         <!-- Drama -->
-        <button class ="collapsible">Drama <span class = "majorType">MR</span></button>
+        <button id= "drama"class ="collapsible">Drama <span class = "majorType">MR</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> 2.50 GPA or higher in DRAMA 201.
             <p>Must meet with Drama Advisor.
@@ -151,7 +196,7 @@
       <!-- Humanities -->
         <h2>Humanities</h2>
         <!-- Cinema and Media Studies-->
-        <button class ="collapsible">Cinema and Media Studies <span class = "majorType">MR</span></button>
+        <button id= "cms" class ="collapsible">Cinema and Media Studies <span class = "majorType">MR</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> Min 2.0 GPA. Completion of English Composition requirement(C) or a W-course and one from the following classes</p>
             <ul>
@@ -167,7 +212,7 @@
           	 target="_blank">cinema.washington.edu/ba-cinema-media-studies</a></li>
           </div>
         <!-- Asian Language-->
-        <button class ="collapsible">Chinese, Japanese, Korean, South Asian Languages(Hindi or Sanskrit)
+        <button id= "asianLang" class ="collapsible">Chinese, Japanese, Korean, South Asian Languages(Hindi or Sanskrit)
           <span class = "majorType">MR</span></button>
     				<div class = "information">
     				  <p><strong>Pre-Req:</strong> Completion of at least 20 credits in your intended language. The most recent course in your intended language must
@@ -176,7 +221,7 @@
     					 target="_blank">asian.washington.edu/admissions-incoming-freshmen-current-students</a></li>
     				</div>
         <!-- English -->
-        <button class ="collapsible">English: Language and Literature <span class = "majorType">OM</span></button>
+        <button id= "engl" class ="collapsible">English: Language and Literature <span class = "majorType">OM</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> UW students who are currently enrolled can declare English major at any time.
             <p><strong>Additional requirements:</strong>  Overall UW GPA of at least 2.00. English GPA of at least 2.50.
@@ -185,7 +230,7 @@
                target="_blank">english.washington.edu/english-language-and-literature-option</a></li>
          </div>
         <!-- Creative Writing -->
-        <button class ="collapsible">English: Creative Writing <span class = "majorType">CC</span></button>
+        <button id= "englCreative" class ="collapsible">English: Creative Writing <span class = "majorType">CC</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> Already in the English major program or ready to declare. Completion of ENGL 283 and ENGL 284.
             <p><strong>Additional requirements:</strong> Transcripts and Writing Sample of 3-5 poems and 5-10 pages of fiction(preferably a complete story).
@@ -196,7 +241,7 @@
 			<!-- Natural Sciences -->
 				<h2>Natural Sciences</h2>
 				<!-- ACMS -->
-        <button class ="collapsible">Applied and Computational Mathematical Science(ACMS) <span class = "majorType">CC</span></button>
+        <button id="acms" class ="collapsible">Applied and Computational Mathematical Science(ACMS) <span class = "majorType">CC</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> CSE 142, 142, MATH 124, 125, 126 (MATH 134, 135, 136 may subsitute the calculus series). One of MATH 307, 308, AMATH 351, or AMATH 352.
             <p><strong>Other Requirements:</strong> Personal Statement. Min of 2.0 cumulative GPA and 2.5 from Pre-Req.
@@ -218,7 +263,7 @@
                target="_blank">acms.washington.edu/applying</a></li>
           </div>
         <!-- Applied Math -->
-        <button class ="collapsible">Applied Mathematics <span class = "majorType">CC</span></button>
+        <button id= "aMath" class ="collapsible">Applied Mathematics <span class = "majorType">CC</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> Min of 2.0 in each of MATH 124, 125, 126 and AMATH 301.
                                MATH 12X series can be subsituted with Math 134, 135, 136.
@@ -228,7 +273,7 @@
     					 target="_blank">amath.washington.edu/undergraduate-admissions</a></li>
           </div>
         <!--Biochemistry -->
-        <button class ="collapsible">Biochemistry <span class = "majorType">CC</span></button>
+        <button id= "bioChem" class ="collapsible">Biochemistry <span class = "majorType">CC</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> Min of 2.0 for B.S and 1.7 for B.A
               <ul>
@@ -253,7 +298,7 @@
                                                   For the Spring cycle, applications are due the second Friday in April.
           </div>
         <!-- Chemistry -->
-        <button class ="collapsible">Chemistry <span class = "majorType">CC</span></button>
+        <button id= "chem" class ="collapsible">Chemistry <span class = "majorType">CC</span></button>
           <div class = "information">
 			      <p>Chemistry offers 3 (4 including the minor)
 			         degree options with a variance in degree requirements for each:
@@ -342,7 +387,7 @@
     					 target="_blank">depts.washington.edu/chem/undergrad/entrance/index.html</a></li>
           </div>
         <!-- Computer Science -->
-        <button class ="collapsible">Computer Science <span class = "majorType">CC</span></button>
+        <button id= "cs" class ="collapsible">Computer Science <span class = "majorType">CC</span></button>
           <div class = "information">
     			  <p>Hosted through the Paul G. Allen School of Computer Science, which offers a B.S degree
     					 with a major in Computer Science or a B.S in computer engineering. The former will be covered
@@ -396,7 +441,7 @@
   					 target="_blank">cs.washington.edu/academics/ugrad/admissions</a>
     			</div>
         <!-- Mathematics -->
-        <button class ="collapsible">Mathematics <span class = "majorType">CC</span></button>
+        <button id= "math" class ="collapsible">Mathematics <span class = "majorType">CC</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> Min of 2.0 in each MATH 124, 125, 126 and 2.50 GPA in all Mathematics class.
                                MATH 12X series can be subsituted with Math 134, 135, 136.
@@ -416,7 +461,7 @@
     					 target="_blank">math.washington.edu/undergraduate-degree-options#bs-degrees</a></li>
           </div>
         <!-- Physics -->
-        <button class ="collapsible">Physics <span class = "majorType">CC</span></button>
+        <button id= "phys" class ="collapsible">Physics <span class = "majorType">CC</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> Completion of MATH 124(or 134), 125(or 135), 126, PHYS 121(or above 3.5 in 114 and 117), 122, and 123.
 
@@ -438,7 +483,7 @@
     					 target="_blank">phys.washington.edu/declaring-major</a></li>
           </div>
         <!--Psychology -->
-        <button class ="collapsible">Psychology <span class = "majorType">CC</span></button>
+        <button id= "psych" class ="collapsible">Psychology <span class = "majorType">CC</span></button>
            <div class = "information">
     					<p><strong>Pre-Req:</strong> Minimum 2.0 of
                 <ul>
@@ -451,7 +496,7 @@
     					 target="_blank">psych.uw.edu/undergraduate/prospective-students/admissions</a></li>
     			 </div>
         <!-- Statistics -->
-        <button class ="collapsible">Statistics <span class = "majorType">CC</span></button>
+        <button id= "stat" class ="collapsible">Statistics <span class = "majorType">CC</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> The regular calculus series MATH 124, 125, 126 (or MATH(honors) 134, 135, 136).
                                 Statistics department also requires MATH 324, one of STAT 311(highly recommended) or STAT 390, and one of CSE 142 or CSE 160 for admission.
@@ -471,7 +516,7 @@
       <!-- Social Sciences -->
 				<h2>Social Sciences</h2>
         <!-- Communication -->
-        <button class ="collapsible">Communication <span class = "majorType">CC</span></button>
+        <button id="com" class ="collapsible">Communication <span class = "majorType">CC</span></button>
            <div class = "information">
     					<p><strong>Pre-Req:</strong>
                 <ul>
@@ -486,7 +531,7 @@
      					 target="_blank">com.washington.edu/journalism/journalism-admissions/</a></li>
     			 </div>
         <!-- Economics -->
-        <button class ="collapsible">Economics <span class = "majorType">CC</span></button>
+        <button id= "econ"class ="collapsible">Economics <span class = "majorType">CC</span></button>
   			    <div class = "information">
     			   <p><strong>Pre-Req:</strong> UW student with 45 credits completed(Sophomore).
              <ul>
@@ -513,28 +558,28 @@
                      target="_blank">econ.washington.edu/choosing-your-economics-degree</a></li>
   			    </div>
         <!-- Geography -->
-				<button class ="collapsible">Geography <span class = "majorType">OM</span></button>
+				<button id= "geography" class ="collapsible">Geography <span class = "majorType">OM</span></button>
   			 <div class = "information">
   					<p><strong>Pre-Req:</strong> Minimum 2.0 Cumulative College GPA to declare major
   					<p>More information on <a href = "https://geography.washington.edu/undergraduate-programs"
   					 target="_blank">geography.washington.edu/undergraduate-programs</a></li>
   				</div>
 				<!-- GWSS -->
-				<button class ="collapsible">Gender, Women, and Sexuality Studies <span class = "majorType">OM</span></button>
+				<button id= "gwss" class ="collapsible">Gender, Women, and Sexuality Studies <span class = "majorType">OM</span></button>
   				<div class = "information">
   					<p><strong>Pre-Req:</strong> Minimum 2.0 Cumulative College GPA to declare major
   					<p>More information on <a href = "https://gwss.washington.edu/gwss-major"
   					 target="_blank">gwss.washington.edu/gwss-major</a>
   				</div>
         <!-- Philosophy -->
-        <button class="collapsible">Philosophy <span class = "majorType">OM</span></button>
+        <button id= "phil" class="collapsible">Philosophy <span class = "majorType">OM</span></button>
           <div class = "information">
             <p><strong>Pre-Req:</strong> 10 credits of Philosophy with 2.00 cumulative GPA
             <p>More information on <a href = "https://phil.washington.edu/philosophy-major"
     					 target="_blank">phil.washington.edu/philosophy-major</a>
           </div>
         <!-- Political Science -->
-				<button class ="collapsible">Political Science <span class = "majorType">MR</span></button>
+				<button id= "polS" class ="collapsible">Political Science <span class = "majorType">MR</span></button>
   				<div class = "information">
   					<p><strong>Pre-Reqs:</strong>
 					<ul>
@@ -554,7 +599,7 @@
   					 target="_blank">polisci.washington.edu/political-science-major</a></li>
   				</div>
 				<!-- Sociology -->
-				<button class ="collapsible">Sociology <span class = "majorType">MR</span></button>
+				<button id = "soc" class ="collapsible">Sociology <span class = "majorType">MR</span></button>
   				<div class = "information">
   					<p><strong>Pre-Reqs:</strong>
 					<ul>
@@ -573,7 +618,7 @@
 		<div id = "BuiltEnvironments" class = "collegeAndMajorInfo">
 			<h1>College of Built Environments</h1>
 			<!-- Architecture -->
-			<button class ="collapsible">Architecture <span class = "majorType">CC</span></button>
+			<button id= "arch" class ="collapsible">Architecture <span class = "majorType">CC</span></button>
   			<div class = "information">
   				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
   				Sophomore Admissions, Transfer Admissions, Upper-Division Admission Requirements</em>
@@ -632,7 +677,7 @@
 
 		<div id = "Education" class = "collegeAndMajorInfo">
 			<h1>College of Education</h1>
-      <button class ="collapsible">Education, Communities and Organizations <span class = "majorType">MR</span></button>
+      <button id= "educECO" class ="collapsible">Education, Communities and Organizations <span class = "majorType">MR</span></button>
         <div class = "information">
           <p><strong>Pre-Req:</strong> Completion of 60 credits(credits in progress are counted as well). Completion of one English composition(C) course(min 2.5 GPA).
                               Min of 2.50 overall GPA. Completion or current enrollement in EDUC 280 with min of 2.0 GPA.</p>
@@ -642,7 +687,7 @@
           <p>And on <a href = "https://education.uw.edu/programs/undergraduate/eco/degree-overview"
            target="_blank">education.uw.edu/programs/undergraduate/eco/degree-overview</a></li>
         </div>
-      <button class ="collapsible">Early Childhood & Family Studies <span class = "majorType">CC</span></button>
+      <button id= "educECFS" class ="collapsible">Early Childhood & Family Studies <span class = "majorType">CC</span></button>
         <div class = "information">
           <p><strong>Pre-Req:</strong> No Pre-Req, but encouraged to complete ECFS 200 and other EDUC courses. Min of 2.50 cumulative GPA. Personal Statements required.</p>
           <P><strong>Admission Period:</strong> For Autumn quarter, from March 1st to April 15th. For Winter quarter, September 1st to October 15th.</p>
@@ -656,7 +701,7 @@
 		<div id = "Engineering" class = "collegeAndMajorInfo">
 			<h1>College of Engineering</h1>
 			<!-- Aeronautics and Astronautics -->
-			<button class ="collapsible">Aeronautics and Astronautics <span class = "majorType">CC</span></button>
+			<button id="engrAA" class ="collapsible">Aeronautics and Astronautics <span class = "majorType">CC</span></button>
   			<div class = "information">
   				<p><strong>Applicant Admittance Types:</strong> <em>Engineering Undeclared Admissions,
 				Current UW / Transfer Student Admissions</em>
@@ -713,7 +758,7 @@
 		<div id = "iSchool" class = "collegeAndMajorInfo">
 			<h1>Information School</h1>
 			<!-- Informatics -->
-			<button class ="collapsible">Informatics <span class = "majorType">CC</span></button>
+			<button id= "info" class ="collapsible">Informatics <span class = "majorType">CC</span></button>
   			<div class = "information">
   				<p><strong>Applicant Admittance Types:</strong> <em>Freshman Direct Admissions,
   				Regular Admissions, Transfer Admissions</em>
@@ -738,7 +783,7 @@
 
 		<div id = "Business" class = "collegeAndMajorInfo">
 			<h1>Michael G. Foster School of Business</h1>
-      <button class ="collapsible">Business Administration <span class = "majorType">CC</span></button>
+      <button id= "business" class ="collapsible">Business Administration <span class = "majorType">CC</span></button>
         <div class = "information">
           <p><strong>Pre-Req:</strong>
             <ul>
@@ -772,7 +817,7 @@
 		<div id = "PublicHealth" class = "collegeAndMajorInfo">
 			<h1>School of Public Health</h1>
 			<!-- Public Health -->
-			<button class ="collapsible">Public Health - Global Health <span class = "majorType">CC</span></button>
+			<button id= "pubHlth" class ="collapsible">Public Health - Global Health <span class = "majorType">CC</span></button>
   			<div class = "information">
 				<p>Offers 5 degree options:
 				<ul>
@@ -857,7 +902,7 @@
     <div id = "Nursing" class = "collegeAndMajorInfo">
 			<h1>School of Nursing</h1>
       <!-- Nursing -->
-      <button class ="collapsible">Nursing <span class = "majorType">CC</span></button>
+      <button id= "nurs" class ="collapsible">Nursing <span class = "majorType">CC</span></button>
        <div class = "information">
           <p><strong>Pre-Req:</strong> Minimum 2.0 in
             <ul>
@@ -937,6 +982,26 @@
       function topFunction() {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
+      }
+
+      function searchBar() {
+        document.getElementById("majorShortCut").classList.toggle("show");
+      }
+
+      function filterSearch() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("majorInput");
+        filter = input.value.toUpperCase();
+        div = document.getElementById("majorShortCut");
+        a = div.getElementsByTagName("a");
+        for (i = 0; i < a.length; i++) {
+          txtValue = a[i].textContent || a[i].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            a[i].style.display = "";
+          } else {
+            a[i].style.display = "none";
+          }
+        }
       }
 
       $(document).ready(function() {
