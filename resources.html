@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel="icon" type="image/png" href="logo.png"/>
-		<meta charset = "UTF-8">
-    <title>Explore UW</title>
-    <!--Linking to any external documents/images-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="logo.png"/>
+        <meta charset = "UTF-8">
+        <title>Explore UW</title>
+        <!--Linking to any external documents/images-->
 		<link rel="stylesheet" type="text/css" href="styles.css">
-  </head>
+    </head>
 
     <body>
 		<!-- Title Banner -->
@@ -16,6 +16,8 @@
 				<a href = "index.html" title = "Home" id = "title">Explore UW</a>
 			</div>
 		</div>
+  <!-- Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
     <div id="sideMenu" class="sidenav">
       <a href="javascript:void(0)" class="closebtn"
@@ -31,29 +33,91 @@
       <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
 
     <!-- Body -->
-    <div id = "intro" class = "content">
+    <div id = "intro" class="content" style= "display: none;">
       <h1>Resources for UW students</h1>
-			<p>Under Construction.
+      <p>UW students come from different backgrounds. UW has some resources that could go unnoticed.
+      <p>All the resources can be found on <a href = "https://www.washington.edu/students/servicesforstudents/" target="_blank">washington.edu/students/servicesforstudents/</a></li>
+      <p>Here are some of the resources that we think it is worth looking at.
     </div>
 
+    <h2 style = "margin-left: 65px">IT and Tech</h2>
+    <div id ="tech" class="content" style= "display: none;">
+      <p>As a UW student, you can use various softwares and websites with your UW Net-ID. Here are the list of some programs and other resources that will make your life easier.
+        <ul>
+          <li>Microsoft Office 365 ProPlus: <a href = "https://itconnect.uw.edu/wares/uware/microsoft/" target="_blank">itconnect.uw.edu/wares/uware/microsoft/</a></li>
+          <li>UW Zoom Pro: <a href = "https://itconnect.uw.edu/connect/phones/conferencing/zoom-video-conferencing/" target="_blank">itconnect.uw.edu/connect/phones/conferencing/zoom-video-conferencing/</a></li>
+          <li>UW Web Hosting(making websites): <a href = "https://itconnect.uw.edu/connect/web-publishing/shared-hosting/" target="_blank">itconnect.uw.edu/connect/web-publishing/shared-hosting/</a></li>
+          <li>Student Tech Loan(Loan for laptop and various hardwares for free): <a href = "https://stlp.uw.edu/" target="_blank">stlp.uw.edu/</a></li>
+          <li>Husky TV(free for on-campus students): <a href = "https://itconnect.uw.edu/connect/television/huskytv/" target="_blank">itconnect.uw.edu/connect/television/huskytv/</a></li>
+          <li>Various Library Database: <a href = "https://guides.lib.uw.edu/az.php" target="_blank">guides.lib.uw.edu/az.php</a></li>
+        </ul>
+    </div>
+
+    <h2 style = "margin-left: 65px">Financial Aid</h2>
+    <div id ="money" class="content" style= "display: none;">
+      <p>There are many scholarships and financial aid for UW students. Here are some financial aids that you can apply if eligible.
+        <ul>
+          <li>Husky Promise(For WA-residents): <a href = "https://www.washington.edu/huskypromise/" target="_blank">washington.edu/huskypromise/</a></li>
+          <li>Undergraduate Scholarships: <a href = "https://www.washington.edu/financialaid/types-of-aid/scholarships/undergraduate-scholarships/" target="_blank">washington.edu/financialaid/types-of-aid/scholarships/undergraduate-scholarships/</a></li>
+          <li>Child Care Assistant: <a href = "https://www.washington.edu/financialaid/types-of-aid/child-care-assistance/application-process/" target="_blank">washington.edu/financialaid/types-of-aid/child-care-assistance/application-process/</a></li>
+          <li>Fee-Based Aids: <a href = "https://www.washington.edu/financialaid/getting-started/eligibility/fee-based-programs/" target="_blank">washington.edu/financialaid/getting-started/eligibility/fee-based-programs/</a></li>
+          <li>Our dear old friend FAFSA (UW Code:#003798): <a href = "https://studentaid.gov/h/apply-for-aid/fafsa" target="_blank">studentaid.gov/h/apply-for-aid/fafsa</a></li>
+        </ul>
+      <p>More information on <a href = "https://www.washington.edu/financialaid/" target="_blank">washington.edu/financialaid/</a>
+    </div>
+
+    <h2 style = "margin-left: 65px">Academics and Career</h2>
+    <div id ="bigbrain" class="content" style= "display: none;">
+      <p>UW provides numerous resources for academic purposes and student success as well.
+        <ul>
+          <li>CLUE tutoring: <a href = "http://webster.uaa.washington.edu/asp/website/clue/home/" target="_blank">webster.uaa.washington.edu/asp/website/clue/home/</a></li>
+          <li>Online-Resume review: <a href = "https://careers.uw.edu/online-resume-review/" target="_blank"></a>careers.uw.edu/online-resume-review/</li>
+          <li>DIY resume workshop(resume, cover letter etc): <a href = "https://careers.uw.edu/resources/diy-support/" target="_blank">careers.uw.edu/resources/diy-support/</a></li>
+          <li>UW undergraduate research: <a href = "https://www.washington.edu/undergradresearch/students/find/" target="_blank">washington.edu/undergradresearch/students/find/</a></li>
+          <li>Langauge Learning Center: <a href = "https://depts.washington.edu/llc/" target="_blank">depts.washington.edu/llc/</a></li>
+        </ul>
+      <p>General Academic resources on <a href = "http://webster.uaa.washington.edu/asp/website/" target="_blank">webster.uaa.washington.edu/asp/website/</a>
+      <p>General Career resources on <a href = "https://careers.uw.edu/" target="_blank">careers.uw.edu/</a>
+    </div>
 		<!-- Copyright -->
 		<div id = "copyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
 		</div>
 
 		<script>
-		  function openNav() {
-			document.getElementById("sideMenu").style.width = "200px";
-			document.getElementById("").style.marginLeft = "210px";
-			document.getElementById("title").style.marginLeft = "210px";
-			document.getElementById("").style.marginLeft = "210px";
+      var resources = document.getElementsByClassName("collapsible");
+      var i;
+      var button = document.getElementById("topBtn");
+
+      for(i = 0; i < resources.length; i++){
+        resources[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var info = this.nextElementSibling;
+        if (info.style.maxHeight){
+          info.style.maxHeight = null;
+        } else {
+          info.style.maxHeight = info.scrollHeight + "px";
+        }
+        });
+      }
+
+      function openNav() {
+				document.getElementById("sideMenu").style.width = "200px";
+				document.getElementById("intro").style.marginLeft = "210px";
+				document.getElementById("title").style.marginLeft = "210px";
+				document.getElementById("").style.marginLeft = "210px";
 		  }
 
 		  function closeNav() {
-			document.getElementById("sideMenu").style.width = "0";
-			document.getElementById("").style.marginLeft= "65px";
-			document.getElementById("title").style.marginLeft = "0";
-			document.getElementById("").style.marginLeft = "65px";
+				document.getElementById("sideMenu").style.width = "0";
+				document.getElementById("intro").style.marginLeft= "65px";
+				document.getElementById("title").style.marginLeft = "0";
+				document.getElementById("").style.marginLeft = "65px";
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
 
       $(document).ready(function() {
