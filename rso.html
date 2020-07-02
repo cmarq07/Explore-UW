@@ -2,6 +2,7 @@
 <html>
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="logo.png"/>
         <meta charset = "UTF-8">
         <title>Explore UW</title>
         <!--Linking to any external documents/images-->
@@ -34,24 +35,86 @@
 
 		<!-- Body -->
 		<div id = "intro" class = "content" style= "display: none;">
-		  <p>INTRODUCTION.
-		  <p><strong>Disclaimer:</strong> The information below are subject to change as RSO's make changes or new RSO's are added. We will update them as there are changes.
+      <h1>RSO's and Organizations</h1>
+      <p>With 45,000 students enrolled at UW, students at UW founded various organizations and clubs to meet with students with same interest.
+         At UW these organizations are called RSO, short for Registered Student Organization. Here are some RSO's and organizations at UW for you to check it out.
+		  <p><strong>Disclaimer:</strong> The information below are subject to change as RSO's make changes or new RSO's and organizations are added. We will update them as there are changes.
 		</div>
-	  <div>
-  		<h2 style = "margin-left: 65px">Search by RSO</h2>
-  		<input id = "rsoSearch" type = "search" placeholder = "Enter a specific rso name."
-  				maxlength = "40"></input>
-    </div>
-
-    <button class ="collapsible">NAME OF THE RSO</button>
+    <!-- Camp Kesem -->
+    <button id ="kesem" class ="collapsible">Camp Kesem</button>
       <div class = "information">
-      <p><strong>INFORMATION ABOUT THE RSO</strong>
-      <p>More information on <a href = "ACTUAL LINK"
-          target="_blank"> LINK NAME</a></li>
+        <p>Led by college students, Kesem at UW operates a free summer camp for children going through their parent's cancer.
+        <p>If you are interested, check them out on <a href = "https://www.campkesem.org/find-a-camp/camp-kesem-at-university-of-washington"
+            target="_blank">campkesem.org/find-a-camp/camp-kesem-at-university-of-washington</a></li>
+      </div>
+    <!-- Daily -->
+    <button id ="daily" class ="collapsible">The Daily</button>
+      <div class = "information">
+        <p>Since 1891, The Daily has been informing the UW community by publishing articles and newspapers.
+        <p>Check them out on <a href = "http://www.dailyuw.com/info_pages/about_us/"
+            target="_blank">dailyuw.com/info_pages/about_us/</a></li>
+      </div>
+    <!-- FIG -->
+    <button id="fig" class ="collapsible">First-year Interest Group</button>
+      <div class = "information">
+        <p>About 20 students going to same classes in the first quarter of their first year at UW. While the reviews for FIG are divided, it is a definetely a good start to at least know people at UW.
+        <p>Check them out on <a href = "https://fyp.washington.edu/first-year-interest-groups/"
+            target="_blank">fyp.washington.edu/first-year-interest-groups/</a></li>
+      </div>
+    <!--KSA-->
+    <button id="ksa" class ="collapsible">Korean Student Association</button>
+      <div class = "information">
+        <p>KSA is a club for UW students who are interested in Korean culture and want to connect with people with the same interest.
+           They also aim to help their members and the community while doing so.
+        <p>Check them out on <a href = "https://www.facebook.com/KSAUW/"
+            target="_blank">facebook.com/KSAUW</a></li>
+      </div>
+    <!-- letuuce Eating Club -->
+    <button id="lettuce" class ="collapsible">Lettuce Eating Club</button>
+      <div class = "information">
+        <p>Eating lettuce is very important. Each quarter, the Lettuce Eating Club will crown a Lettuce King or Queen.
+        <p>Check them out on <a href = "https://huskylink.washington.edu/organization/lettuceeatingclub"
+            target="_blank">huskylink.washington.edu/organization/lettuceeatingclub</a></li>
+      </div>
+    <!-- LUX FILM -->
+    <button id="lux" class ="collapsible">LUX Film Production</button>
+      <div class = "information">
+        <p>If you are looking for a first hand experience in film production at UW, LUX Film Production is the perfect club for you.
+           Since UW's Cinema and Media Studies major foucses on analysis of media, many students also join the club to learn about film production.
+        <p>Check them out on <a href = "https://www.luxfilmproductions.com/"
+            target="_blank">luxfilmproductions.com</a></li>
+      </div>
+    <!-- Off Leash -->
+    <button id= "offLeash" class ="collapsible">Off Leash News</button>
+      <div class = "information">
+        <p>UW's one and only humor and satire publication. Their articles and excerpts are going to make your day.
+        <p>Check them out on <a href = "https://www.offleashnews.com/"
+            target="_blank">offleashnews.com</a></li>
+      </div>
+    <!-- udub reddit -->
+    <button id="udub" class ="collapsible">r/udub</button>
+      <div class= "information">
+        <p>Although it may look like everything on the subreddit are rants, r/udub is very useful to students who are seeking information about almost everything at UW.
+        <p>From u/Not_HFS_Reviewer's Daily Reviews of HFS meals to course difficulties, r/udub offers various information about UW. You could also search specific keyword on r/udub to find the information(e.g courses, majors).
+        <p>Check r/udub on <a href = "https://www.reddit.com/r/udub/" target="_blank">www.reddit.com/r/udub/</a>
+      </div>
+    <!--Toast Master-->
+    <button id= "toast" class ="collapsible">Toastmasters</button>
+      <div class = "information">
+        <p>Want to learn about public speaking? Toastmasters at UW is where you can start.
+        <p>Check them out on <a href = "https://www.facebook.com/UWToastmasters/"
+            target="_blank">facebook.com/UWToastmasters/</a></li>
+      </div>
+    <!-- Unite UW -->
+    <button id= "uniteUW" class ="collapsible">Unite UW</button>
+      <div class = "information">
+        <p>Cultural exchange program at UW between domestic and international students. The whole point of this program is to make friends.
+        <p>Check them out on <a href = "https://www.washington.edu/studentlife/uniteuw/"
+            target="_blank">washington.edu/studentlife/uniteuw/</a></li>
       </div>
 
 		<!-- Copyright -->
-		<div id = "copyright">
+		<div id = "scrollCopyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
 		</div>
 
