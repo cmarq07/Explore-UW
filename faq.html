@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta charset = "UTF-8">
+        <link rel="icon" type="image/png" href="logo.png"/>
         <title>Explore UW</title>
-	      <link rel="icon" type="image/png" href="logo.png"/>
         <!--Linking to any external documents/images-->
-	      <link rel="stylesheet" type="text/css" href="styles.css">
+		<link rel="stylesheet" type="text/css" href="styles.css">
     </head>
 
     <body>
@@ -15,6 +16,8 @@
 				<a href = "index.html" title = "Home" id = "title">Explore UW</a>
 			</div>
 		</div>
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
 
 		<div id="sideMenu" class="sidenav">
 			<a href="javascript:void(0)" class="closebtn"
@@ -30,29 +33,86 @@
 		<span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
 
 		<!-- Body -->
-		<div id = "intro" class = "content">
-			<h1>FAQ</h1>
-			<p>Under Construction
-		</div>
+    <div id = "intro" class = "content" style= "display: none;">
+      <h1>FAQ and Tips for First-year and prospective UW students</h1>
+      <p>These are some questions and answers that we thought it would have been helpful to us when we were prospective UW students and First-year students.
+         However, students study and socialize in different ways. You are the one who knows you the best. While these questions may not be applicable to you,
+         it's no harm to know these. We will update as we get more feedbacks.
+    </div>
 
+    <div class ="content" style= "display: none;">
+      <h2>AP and IB, should I skip the classes if I can?</h2>
+      <p>There are two types of students who would want this answer.
+        <ul>
+          <li>Student who wants to skip courses to have access to upper-level courses.</li>
+          <li>Student who wants a strong foundation in these classes.</li>
+        </ul>
+      <p>For the first student, while you would be able to skip few classes, there will be some classes that will be important for you to the content of upper-level courses.
+         But, if you think you are pretty decent at the skippable courses, then go for it, skip! You don't have to take it again if you are good.
+      <p>For the second student, if you want a strong foundation in the skippable classes, then take it again. Taking a skippable class does not detract the credits you have earned.
+         For example, if you can skip MATH 125, thanks to AP, but took MATH 125 again at UW, you have earned 10 credits. This is a good idea, but remember that you don't have to take
+         a class again if you are decent in that course.
+    </div>
+    <div class ="content" style= "display: none;">
+      <h2>I have "____" on SAT/ACT and "___" GPA. What's my chance of getting in?</h2>
+      <p>This is a hard question. I see some people who have higher SAT score than what I got get rejected from UW. Same goes with the GPA. The fator of being in-state also matters.
+         But, I think what really mattered was the essay. Essay is one place that you can talk about yourself and show how and why you are ready to be in college. If the essay is weak,
+         then you could get a rejection. Also, UW announced that they won't look at SAT/ACT scores starting Fall 2021. So, the essay will be more important in the future. If you think you have
+         a decent GPA, then focus more on making your essay stronger.
+    </div>
+    <div class ="content" style= "display: none;">
+      <h2>What is S/NS? Should I do that if my grades are low?</h2>
+      <p>S/NS is Satisfactory/Non Satisfactory. It's like PASS/FAIL, but it's you who get to choose if you want your grades to be shown or not. This is a double edged sword.
+         While, S/NS could save your GPA, it may look bad on your transcript unless you had a reasonable cause for doing it. For Spring 2020, UW decided that the courses in
+         Spring 2020 with S/NS can count toward your major admission pre-req. If it is a very important class and the admission looks at it with great attention, it won't
+         look good if you S/NS. If it is a starting class or the beginning of a series, S/NS is not a bad idea and aim for higher grades in the upper-level classes.
+    </div>
+    <div class ="content" style= "display: none;">
+      <h2>What is Dawg Pack? Should I get it?</h2>
+      <p>Dawg Pack is a season ticket that for $150 you get an access to the student area for all the home football and Men's Basketball games. Normally we would recommend
+         getting it if you like sports and want to go to the games, but due to COIVD-19, the possibility of watching the game in-person seems very low with Fall 2020 being hybrid.
+    </div>
+    <div class ="content" style= "display: none;">
+      <h2>My schedule is "________________". Is it doable?</h2>
+      <p>Students who ask this question are mostly aiming for STEM related majors. Before you begin, try to take a composition course, since most majors require you to take composition.
+         The general rule of thumb for STEM students at UW is three courses(15 Credit) in one quarter, two being NW(Science) and QSR(Math), and one elective(VLPA, I&S, C, W, DIV). Generally,
+         taking two from the same subject(e.g Math 126(5Cr), Math 307(3Cr)) will not be an enjoyable quarter for you. You can also go on r/udub to check if your schedule is doable (search "doable" on r/udub). If it is
+         your first quarter, then consider FIG as well.
+    </div>
+    <div class ="content" style= "display: none;">
+      <h2>Is FIG worth it?</h2>
+      <p>First-year Interest Group(FIG) is a First Year Program(FYP) that about 20 students in your FIG going to same classes for the first quarter as a first year UW student. Generally, they are 12 Credits,
+         with one FIG course(2CR) that teaches you about UW resources and get familiar with UW, and two courses(5CR + 5CR) pre-selected. Since it is a 12 credit, you can take an additional course, but except
+         for that course, you can't drop the courses in FIG without dropping all of them. General advice would be first, choose a FIG that has a course that interest you, and second, if it has many students
+         in it. Also, FIGs offer Composition(C) courses, which are pre-req for most of the majors at UW. The reviews for FIGs are very divided. Some students liked it, but some students hated it.
+    </div>
 		<!-- Copyright -->
-		<div id = "copyright">
+		<div id = "scrollCopyright">
 			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
 		</div>
 		<script>
 		  function openNav() {
-			document.getElementById("sideMenu").style.width = "200px";
-			document.getElementById("intro").style.marginLeft = "210px";
-			document.getElementById("title").style.marginLeft = "210px";
-			document.getElementById("disclaimer").style.marginLeft = "210px";
+  			document.getElementById("sideMenu").style.width = "200px";
+  			document.getElementById("intro").style.marginLeft = "210px";
+  			document.getElementById("title").style.marginLeft = "210px";
+  			document.getElementById("disclaimer").style.marginLeft = "210px";
 		  }
 
 		  function closeNav() {
-			document.getElementById("sideMenu").style.width = "0";
-			document.getElementById("intro").style.marginLeft= "65px";
-			document.getElementById("title").style.marginLeft = "0";
-			document.getElementById("disclaimer").style.marginLeft = "65px";
+  			document.getElementById("sideMenu").style.width = "0";
+  			document.getElementById("intro").style.marginLeft= "65px";
+  			document.getElementById("title").style.marginLeft = "0";
+  			document.getElementById("disclaimer").style.marginLeft = "65px";
 		  }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      $(document).ready(function() {
+        $("div.content").fadeIn(1400);
+      });
       </script>
     </body>
 </html>
