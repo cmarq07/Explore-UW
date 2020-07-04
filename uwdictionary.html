@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="icon" type="image/png" href="logo.png"/>
+        <meta charset = "UTF-8">
+        <title>Explore UW - Dictionary</title>
+        <!--Linking to any external documents/images-->
+		<link rel="stylesheet" type="text/css" href="styles.css">
+    </head>
+
+    <body>
+		<!-- Title Banner -->
+        <div class = "navContainer">
+			<div>
+				<a href = "index.html" title = "Home" id = "title">Explore UW</a>
+			</div>
+		</div>
+  <!-- Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+
+    <div id="sideMenu" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn"
+        onclick="closeNav()">&times;</a>
+        <a href = "index.html" title = "Home">Home</a>
+        <a href = "campus_map.html" title = "Campus Map">Campus Map</a>
+        <a href = "majors.html" title = "Majors">Majors</a>
+		<a href = "uwdictionary.html" title = "UW Dictionary">UW Dictionary</a>
+        <a href = "rso.html" title = "RSOs">RSOs</a>
+        <a href = "faq.html" title = "FAQ">FAQ</a>
+        <a href = "resources.html" title = "Resources">Resources</a>
+        <a href = "about.html" title = "About">About Us</a>
+      </div>
+      <span style="font-size:25px; cursor:pointer" onclick="openNav()">&#9776; Features</span>
+
+    <!-- Body -->
+    <div id = "intro" class="content" style= "display: none;">
+      <h1>UW Dictionary</h1>
+      <p>Here at UW, we love acronyms. Almost every thing on the campus has an acronym for it. 
+	  We're college students, who has time to pronounce words? Here we have compiled a list of some of the most used
+	  acronyms/words that you'll find students using a lot (and we mean a lot) of the time! Get acquainted with them!
+	  <br>P.S - This page is mostly satirical, although it holds <em>some</em> truths.
+    </div>
+
+    <h2 style = "margin-left: 65px">Terms</h2>
+    <div id ="terms" class="content" style= "display: none;">
+		<p><strong>bOuNdLeSs</strong> - A UW students true potential. At UW, there are no bounds, anyone can do ANYTHING!
+		/s
+		<p><li><em>I just got rejected from CSE! I'm feeling like a truly boundless husky right now.</em></li>
+		<p><strong>CT</strong> - Center Table. THE spot to eat on North Campus.
+		<p><li><em>I'm kinda hungry. Let's go eat at CT!</em></li>
+		<p><strong>CSE</strong> - Computer Science / Engineering. The major everyone wants, but no one has.
+		<p><li><em>F in chat for all our boundless CSE rejects. Guess I'll major in INFO instead...</em></li>
+		<p><strong>DM</strong> - District Market. Lots of grocery shopping gets done here!
+		<p><li><em>I'm so sick of eating Top Ramen 24/7. Let's go get some fruit from the DM!</em></li>
+		<p><strong>DUBs</strong> - UW's most goodest boy!
+		<p><li><em>Did you see DUBs' new post on Insta? He's SO adorable!!!</em></li>
+		<p><strong>GWSS (G-Wizz)</strong> - Gender, Women, and Sexual Studies. You wanna be woke? Take one of these classes!
+		<p><li><em>GWSS 200 was easy to get a good grade, but I actually learned a lot about society!</em></li>
+		<p><strong>The HUB</strong> - Husky Union Building. Pretty much an all-in-one for services at UW
+		<p><li><em>Ugh, I'm bored of eating at CT. Let's go get something from the HUB</em></li>
+		<p><strong>IMA</strong> - Intramural Activities. UW's gym for swole bois and girls and of course, getting
+		dominated by the D1 basketball rejects on the courts.
+		<p><li><em>Jesus, I've been so caught up with classes that I haven't lifted recently. Time to hit the
+		IMA!</em></li>
+		<p><strong>INFO</strong> - The Informatics major. The #2 home for boundless CSE rejects, but also the best major
+		(unbiased opinion)
+		<p><li><em>Man, can't believe I got rejected from CSE! Guess it's time to apply for Info!</em></li>
+		<p><strong>Ode</strong> - Odegaard Library. Home of the infamous UW glory hole. (don't ask)
+		<p><li><em>Let's go cram for these 3 finals at Ode!</em></li>
+		<p><strong>Pag's</strong> - Pagliacci's Pizza! It's either your favorite, or you eat it so much that you begin to hate it.
+		<p><li><em>F*** it, I've eaten Pag's 3 times in this week. Guess I'll get it again since it's the closest
+		thing.</em></li>
+		<p><strong>Suz</strong> - Suzzallo Library. The place with the Harry Potter floating torches room.
+		<p><li><em>Ode is super busy! Let's go study in Suz instead!</em></li>
+		<p><strong>Schedule Updated</strong> - Words of true ecstasy. If you don't see this first try at 6:00 A.M on registration
+		day, you're probably upset.
+		<p><li><em>Just got all my classes for fall! Man, that "schedule updated" is so satisfying.</em></li>
+    </div>
+
+
+		<!-- Copyright -->
+		<div id = "copyright">
+			<strong>© 2020 W817 Project Team</strong> - All Rights Reserved
+		</div>
+
+		<script>
+      var resources = document.getElementsByClassName("collapsible");
+      var i;
+      var button = document.getElementById("topBtn");
+
+      for(i = 0; i < resources.length; i++){
+        resources[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var info = this.nextElementSibling;
+        if (info.style.maxHeight){
+          info.style.maxHeight = null;
+        } else {
+          info.style.maxHeight = info.scrollHeight + "px";
+        }
+        });
+      }
+
+      function openNav() {
+				document.getElementById("sideMenu").style.width = "200px";
+				document.getElementById("intro").style.marginLeft = "210px";
+				document.getElementById("title").style.marginLeft = "210px";
+				document.getElementById("").style.marginLeft = "210px";
+		  }
+
+		  function closeNav() {
+				document.getElementById("sideMenu").style.width = "0";
+				document.getElementById("intro").style.marginLeft= "65px";
+				document.getElementById("title").style.marginLeft = "0";
+				document.getElementById("").style.marginLeft = "65px";
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+
+      $(document).ready(function() {
+        $("div.content").fadeIn(1400);
+      });
+      </script>
+    </body>
+</html>
