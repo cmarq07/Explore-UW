@@ -1,6 +1,7 @@
 /* Page Headers and Footer */
 #title {
-	color:#b7a57a;
+	/* #b7a57a*/
+	color:white;
 	font-size:3em;
 	font-weight:bold;
 	display:inline-block;
