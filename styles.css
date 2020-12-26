@@ -16,31 +16,26 @@
 	-ms-user-select: none;
 	cursor:pointer;
 }
-
+/* #36215e */
 #copyright {
-		position:absolute;
 		background-color:#36215e;
-		margin-top:20px;
+		position:absolute;
 		width:100%;
-		padding:10px 0 10px 0;
-		font-size:20px;
+		padding:0.5vw 0 0.5vw 0;
+		font-size:2.5vh;
 		color:white;
 		text-align:center;
 		bottom:0;
 }
-
 #scrollCopyright {
-		position:absolute;
 		background-color:#36215e;
 		width:100%;
-		margin-top:20px;
-		padding:10px 0 10px 0;
-		font-size:20px;
+		padding:0.5vw 0 0.5vw 0;
+		font-size:2.5vh;
 		color:white;
 		text-align:center;
-		bottom:0;
+		margin-top:5vh;
 }
-
 .navContainer {
 	height:60px;
 	background-color:#4b2e83;
