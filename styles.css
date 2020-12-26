@@ -18,7 +18,7 @@
 }
 
 #copyright {
-		position:fixed;
+		position:absolute;
 		background-color:#36215e;
 		margin-top:20px;
 		width:100%;
@@ -30,6 +30,7 @@
 }
 
 #scrollCopyright {
+		position:absolute;
 		background-color:#36215e;
 		width:100%;
 		margin-top:20px;
@@ -335,8 +336,8 @@ h2, h3 {
 }
 
 .groups {
-transition: margin-left .5s;
-margin-left: 10px;
+	transition: margin-left .5s;
+	margin-left: 10px;
 }
 
 .majorType {
