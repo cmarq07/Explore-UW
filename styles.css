@@ -1,6 +1,6 @@
 /* Page Headers and Footer */
 #title {
-	color:white;
+	color:#b7a57a;
 	font-size:3em;
 	font-weight:bold;
 	display:inline-block;
@@ -20,6 +20,7 @@
 #copyright {
 		position:fixed;
 		background-color:#36215e;
+		margin-top:20px;
 		width:100%;
 		padding:10px 0 10px 0;
 		font-size:20px;
@@ -31,6 +32,7 @@
 #scrollCopyright {
 		background-color:#36215e;
 		width:100%;
+		margin-top:20px;
 		padding:10px 0 10px 0;
 		font-size:20px;
 		color:white;
